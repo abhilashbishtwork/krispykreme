@@ -1,0 +1,3453 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+<meta charset="utf-8">
+		<link rel="stylesheet" href="../assets/vendor/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link href="../assets/vendor/foundation/5.5.0/css/foundation.min.css" rel="stylesheet"/>
+		<link href="../assets/fonts/fonts/01d89fd637-071afa.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+		<!-- <link href='../assets/fonts/fonts/c1a84445ee-6bb050.css' rel='stylesheet' type='text/css'> -->
+		<!-- <link href="../assets/vendor/animate.css/3.2.0/animate.min.css" rel="stylesheet" type="text/css"> -->
+  		<script type="text/javascript" src="../assets/vendor/jquery/2.1.1/jquery.min.js"></script>
+  	
+
+		<style type="text/css">
+			body
+		{
+							background-image: url('') !important ;
+				background-attachment: fixed !important;
+				background-size: cover !important;
+						}
+				#main-content,#offer-box
+		{
+							background-image: url('') !important ;
+						}
+					</style>
+
+<!--[if lt IE 9]><![endif]--><style type="text/css">section#outer-wrapper {
+    padding: 0 !important;
+}
+#inner-wrapper {
+    overflow: unset !important;
+    width: 100%;
+    padding: 0 !important;
+    position: unset !important;
+    top: unset !important;
+}
+
+#inner-wrapper #main-content {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    background-color: unset !important;
+    position: unset !important;
+   padding: 0 !important;
+}
+#inner-wrapper #main-content #main-content-wrapper {
+    margin: 0 auto;
+    width: 100% !important;
+}
+#locate .locate-wrapper.style1 {text-align: unset !important; padding: 0 !important;}
+header#header {
+    display: none !important;
+}
+/* --- FONT IMPORTS --- */
+    @font-face {
+        font-family: 'Gelica SemiBold';
+        src: url('../assets/media/Gelica-Semi-Bold.otf') format('opentype');
+        font-weight: 600; font-style: normal; font-display: swap;
+    }
+    @font-face {
+        font-family: 'Brandon Grotesque Black';
+        src: url('../assets/media/BrandonGrotesqueBlack.ttf') format('truetype');
+        font-weight: 900; font-style: normal; font-display: swap;
+    }
+    @font-face {
+        font-family: 'Brandon Grotesque Regular';
+        src: url('../assets/media/fonnts.com-Brandon_Grotesque_Regular.otf') format('opentype');
+        font-weight: 400; font-style: normal; font-display: swap;
+    }
+.kk-hero-content * {
+    color: #fff !important;
+}
+
+    /* --- SCOPED VARIABLES & BASE --- */
+    #kk-lp-wrapper {
+        --kk-chocolate: #2c2c2c; 
+        --kk-green: #006241;     
+        --kk-white: #FFFFFF;     
+        --kk-dough: #F5E6CC;     
+        --kk-red: #C8102E;     
+        --kk-cream: #FCFAF7; 
+        --kk-tan: #f0e6d8;
+        --kk-gold: #b38550;
+        --kk-pink: #df3153;
+        --kk-dark: #1a0904; 
+
+        font-family: 'Brandon Grotesque Regular', sans-serif;
+        background-color: var(--kk-white);
+        color: var(--kk-chocolate);
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0; 
+        position: relative;
+    }
+    
+    #kk-lp-wrapper * { box-sizing: border-box; }
+    
+    #kk-lp-wrapper h1, #kk-lp-wrapper h2, #kk-lp-wrapper h3, #kk-lp-wrapper .section-title { 
+        font-family: 'Gelica SemiBold', serif; font-weight: 600; color: var(--kk-chocolate); margin: 0; 
+    }
+    #kk-lp-wrapper p { line-height: 1.5; color: var(--kk-chocolate); font-size: 1.15rem; margin: 0; }
+
+    /* --- GSAP INITIAL STATES --- */
+    #kk-lp-wrapper .gsap-fade-up, #kk-lp-wrapper .gsap-stagger > *, #kk-lp-wrapper .gsap-text-reveal { opacity: 0; transform: translateY(40px); }
+    #kk-lp-wrapper .gsap-fade-in { opacity: 0; }
+
+    /* --- PRELOADER --- */
+    #kk-preloader {
+        position: fixed; inset: 0; background: #381a10; z-index: 99999;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        color: #F5E6CC; overflow: hidden;
+    }
+    #kk-preloader .loader-content { text-align: center; display: flex; flex-direction: column; align-items: center; }
+    #kk-preloader .loader-donut { width: 140px; height: 140px; object-fit: contain; margin-bottom: 25px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
+    #kk-preloader .loader-counter { font-family: 'Brandon Grotesque Black', sans-serif; font-size: 3rem; color: #FFFFFF; line-height: 1; margin-bottom: 10px; font-weight: 900; }
+    #kk-preloader .loader-text { font-family: 'Brandon Grotesque Black', sans-serif; letter-spacing: 5px; font-weight: 900; text-transform: uppercase; font-size: 0.9rem; color: #F5E6CC; opacity: 0.8; }
+
+    /* --- BUTTONS --- */
+    #kk-lp-wrapper .btn-solid-red {
+        background: var(--kk-red); color: var(--kk-white);
+        padding: 10px 28px; border-radius: 4px;
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: 1rem; font-weight: 900;
+        text-transform: uppercase; letter-spacing: 1.5px; text-decoration: none;
+        display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+        transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); border: 2px solid var(--kk-red); cursor: pointer;
+        position: relative; overflow: hidden;
+    }
+    #kk-lp-wrapper .btn-solid-red::after {
+        content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+        transform: skewX(-25deg); z-index: 1; transition: 0.6s ease;
+    }
+    #kk-lp-wrapper .btn-solid-red:hover { background: #a00b24; border-color: #a00b24; box-shadow: 0 8px 20px rgba(200, 16, 46, 0.4); transform: translateY(-3px); }
+    #kk-lp-wrapper .btn-solid-red:hover::after { left: 200%; }
+
+    #kk-lp-wrapper .btn-outline {
+        background: transparent; padding: 10px 24px; border-radius: 4px;
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: 1rem; font-weight: 900;
+        text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none;
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); cursor: pointer;
+    }
+    #kk-lp-wrapper .btn-outline.dark { color: var(--kk-chocolate); border: 2px solid rgba(74,32,18,0.3); }
+    #kk-lp-wrapper .btn-outline.dark:hover { background: var(--kk-chocolate); color: var(--kk-white); border-color: var(--kk-chocolate); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(74,32,18,0.2); }
+    #kk-lp-wrapper .btn-outline.green { color: var(--kk-green); border: 2px solid var(--kk-green); }
+    #kk-lp-wrapper .btn-outline.green:hover { background: var(--kk-green); color: var(--kk-white); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 98, 65, 0.3); }
+
+    /* --- HEADER --- */
+    #kk-lp-wrapper nav { 
+        position: fixed; top: 0; left: 0; width: 100%; padding: 15px 5vw; 
+        display: flex; justify-content: space-between; align-items: center; 
+        z-index: 1000; transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        background: linear-gradient(90deg, rgba(43,18,10,0.95) 0%, rgba(74,33,17,0.95) 50%, rgba(43,18,10,0.95) 100%);
+        backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    #kk-lp-wrapper nav.scrolled { padding: 10px 5vw; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    #kk-lp-wrapper .nav-logo img { height: 42px; transition: transform 0.4s ease; }
+    #kk-lp-wrapper .nav-logo:hover img { transform: scale(1.05); }
+    #kk-lp-wrapper .nav-links { display: flex; align-items: center; gap: 35px; }
+    #kk-lp-wrapper .nav-link { 
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: 0.95rem; font-weight: 900;
+        letter-spacing: 2px; color: #fff; text-decoration: none; text-transform: uppercase; 
+        transition: 0.3s ease; opacity: 0.85; position: relative;
+    }
+    #kk-lp-wrapper .nav-link::after {
+        content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0;
+        background-color: var(--kk-white); transition: width 0.3s ease;
+    }
+    #kk-lp-wrapper .nav-link:hover { color: var(--kk-white); opacity: 1; }
+    #kk-lp-wrapper .nav-link:hover::after { width: 100%; }
+
+    /* --- HERO SECTION --- */
+    #kk-lp-wrapper .hero-container { position: relative; height: 100vh; min-height: 700px; width: 100%; overflow: hidden; }
+    
+    #kk-lp-wrapper .hero-bg-video {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;
+    }
+    
+    #kk-lp-wrapper .hero-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 1; }
+    
+    #kk-lp-wrapper .hero-content { 
+        position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); 
+        z-index: 2; padding: 0 4vw; width: 100%; max-width: 800px; 
+        perspective: 1000px; text-align: center; display: flex; flex-direction: column; align-items: center; 
+    }
+    #kk-lp-wrapper .hero-content h1 { font-size: clamp(3rem, 5vw, 5.5rem); color: var(--kk-white); line-height: 1.05; margin-bottom: 25px; text-transform: uppercase; letter-spacing: -1px; text-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+    #kk-lp-wrapper .hero-content .subhead { font-size: 1.3rem; font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: var(--kk-white); margin-bottom: 40px; line-height: 1.4; opacity: 0.9; letter-spacing: 0.5px; text-shadow: 0 5px 15px rgba(0,0,0,0.6); }
+
+    /* HERO ACTIONS & GLASS MODAL */
+    #kk-lp-wrapper .hero-actions { display: flex; gap: 15px; z-index: 10; position: relative; align-items: center; justify-content: center; flex-wrap: wrap;}
+    #kk-lp-wrapper .hero-actions .btn-outline { color: var(--kk-white); border-color: rgba(255,255,255,0.5); }
+    #kk-lp-wrapper .hero-actions .btn-outline:hover { background: var(--kk-white); color: var(--kk-chocolate); border-color: var(--kk-white);}
+
+    #kk-lp-wrapper .glass-modal-overlay {
+        position: fixed; inset: 0; 
+        background: rgba(0, 0, 0, 0.6); 
+        z-index: 10000; 
+        display: flex; align-items: center; justify-content: center; 
+        opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+    }
+    #kk-lp-wrapper .glass-modal-overlay.active {
+        opacity: 1; pointer-events: auto;
+    }
+    #kk-lp-wrapper .glass-modal {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 20px; padding: 50px 40px; 
+        text-align: center; width: 90%; max-width: 650px; 
+        transform: scale(0.95); transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        position: relative;
+    }
+    #kk-lp-wrapper .glass-modal-overlay.active .glass-modal { transform: scale(1); }
+    #kk-lp-wrapper .modal-close {
+        position: absolute; top: 15px; right: 20px; font-size: 2.5rem; line-height: 1; 
+        color: white; cursor: pointer; background: none; border: none; opacity: 0.7; transition: 0.3s;
+    }
+    #kk-lp-wrapper .modal-close:hover { opacity: 1; transform: rotate(90deg); }
+    #kk-lp-wrapper .modal-title { font-family: 'Gelica SemiBold', serif; font-size: 2.2rem; color: white; margin-bottom: 40px; text-shadow: 0 4px 10px rgba(0,0,0,0.3);}
+    
+    #kk-lp-wrapper .order-options { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    #kk-lp-wrapper .order-card {
+        background: rgba(255,255,255,0.9); border-radius: 16px; padding: 25px 20px; flex: 1; min-width: 150px; 
+        display: flex; flex-direction: column; align-items: center; gap: 15px; 
+        text-decoration: none; transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        color: var(--kk-chocolate); font-family: 'Brandon Grotesque Black', sans-serif; font-size: 1.1rem; text-transform: uppercase;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    #kk-lp-wrapper .order-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.25); background: white; }
+    #kk-lp-wrapper .order-card img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 2px solid var(--kk-cream);}
+
+    /* HERO BOTTOM BAR - SLEEK REDESIGN */
+    #kk-lp-wrapper .hero-bottom-bar {
+        position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 6vw; 
+        display: flex; justify-content: space-between; align-items: center; gap: 4vw;
+        background: rgb(20 5 0 / 50%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); z-index: 2;
+        border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    #kk-lp-wrapper .hero-stats { display: flex; gap: 4vw; align-items: center; flex-wrap: wrap;}
+    #kk-lp-wrapper .stat-item { display: flex; align-items: center; gap: 12px; color: var(--kk-white); cursor: default; transition: 0.3s; }
+    #kk-lp-wrapper .stat-item:hover { transform: translateY(-2px); }
+    #kk-lp-wrapper .stat-icon { width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: 0.3s; background: rgba(0,0,0,0.2); flex-shrink: 0; }
+    #kk-lp-wrapper .stat-item:hover .stat-icon { background: rgba(255,255,255,0.1); border-color: var(--kk-white); }
+    #kk-lp-wrapper .stat-icon svg { width: 18px; height: 18px; fill: none; stroke: var(--kk-white); stroke-width: 1.5; }
+    #kk-lp-wrapper .stat-text { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.7rem; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.95; color: white;}
+    #kk-lp-wrapper .stat-text span { font-size: 0.9rem; display: block; margin-bottom: 2px;}
+
+    @keyframes subtlePulse { 0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); } 70% { box-shadow: 0 0 0 12px rgba(255, 255, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); } }
+    #kk-lp-wrapper .pause-btn { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: white; background: rgba(255,255,255,0.1); transition: 0.3s; animation: subtlePulse 2s infinite; flex-shrink: 0; margin-left: auto;}
+    #kk-lp-wrapper .pause-btn:hover { background: var(--kk-white); color: var(--kk-chocolate); transform: scale(1.05); animation: none; }
+
+    /* --- MASTERS SECTION --- */
+    #kk-lp-wrapper .masters-lto { display: flex; align-items: center; justify-content: center; gap: 70px; padding: 100px 6vw; background: var(--kk-white); perspective: 1000px; }
+    #kk-lp-wrapper .masters-image-col { position: relative; width: 45%; max-width: 550px; display: flex; justify-content: center; align-items: center; }
+    #kk-lp-wrapper .masters-image-col .mesh-bg { width: 100%; position: absolute; z-index: 1; }
+    #kk-lp-wrapper .masters-image-col .box-img { width: 85%; position: relative; z-index: 2; filter: drop-shadow(0 25px 40px rgba(0,0,0,0.15)); transform: rotate(-3deg); }
+    #kk-lp-wrapper .badge-bestseller {
+        position: absolute; top: -15px; left: -15px; width: 100px; height: 100px;
+        background: var(--kk-red); color: white; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center; text-align: center;
+        font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 1rem; line-height: 1.1;
+        letter-spacing: 1px; box-shadow: 0 10px 20px rgba(200,16,46,0.3); z-index: 5;
+    }
+    #kk-lp-wrapper .masters-text-col { width: 45%; max-width: 500px; }
+    #kk-lp-wrapper .masters-text-col h2 { font-size: clamp(2.8rem, 4vw, 4rem); margin-bottom: 20px; line-height: 1.05; }
+    #kk-lp-wrapper .masters-text-col p { font-size: 1.2rem; margin-bottom: 30px; }
+    #kk-lp-wrapper .action-buttons { display: flex; gap: 15px; width: 100%; }
+    #kk-lp-wrapper .action-buttons a { flex: 1; text-align: center; }
+
+    /* --- EXACT 3-COLUMN RICH, SOFT SECTION --- */
+    #kk-lp-wrapper .rich-soft-section { 
+        display: flex; background: var(--kk-cream); min-height: 550px; padding-left: 6vw; align-items: stretch; border-bottom: 1px solid rgba(0,0,0,0.05); overflow: hidden;
+    }
+    #kk-lp-wrapper .rs-text-col { 
+        flex: 1.2; display: flex; flex-direction: column; justify-content: center; 
+        padding: 60px 2vw 60px 0; 
+    }
+    #kk-lp-wrapper .rs-text-col h2 { 
+        font-size: clamp(3rem, 4vw, 4rem); line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    #kk-lp-wrapper .rs-text-col h4 { 
+        color: var(--kk-green); font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900;
+        font-size: 0.95rem; letter-spacing: 1.5px; margin-bottom: 25px; text-transform: uppercase; 
+    }
+    #kk-lp-wrapper .rs-text-col p { 
+        margin-bottom: 35px; font-size: 1.15rem; max-width: 450px; opacity: 0.9;
+    }
+    #kk-lp-wrapper .rs-mid-col {
+        flex: 0 0 280px; display: flex; flex-direction: column; justify-content: center;
+        padding: 60px 4vw 60px 1vw;
+    }
+    #kk-lp-wrapper .rs-mid-item {
+        display: flex; align-items: center; gap: 18px; padding: 22px 0;
+        border-bottom: 1px solid rgba(74,32,18,0.15); transition: 0.3s ease;
+        cursor: default;
+    }
+    #kk-lp-wrapper .rs-mid-item:hover { transform: translateX(10px); border-color: rgba(74,32,18,0.3); }
+    #kk-lp-wrapper .rs-mid-item:last-child { border-bottom: none; }
+    #kk-lp-wrapper .rs-mid-icon {
+        width: 45px; height: 45px; border-radius: 50%; border: 1px solid rgba(74,32,18,0.2);
+        display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: rgba(255,255,255,0.5);
+        transition: 0.3s ease;
+    }
+    #kk-lp-wrapper .rs-mid-item:hover .rs-mid-icon { background: var(--kk-white); box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+    #kk-lp-wrapper .rs-mid-icon svg { width: 22px; height: 22px; fill: none; stroke: var(--kk-chocolate); stroke-width: 1.5; transition: 0.3s;}
+    #kk-lp-wrapper .rs-mid-item:hover .rs-mid-icon svg { stroke: var(--kk-red); transform: scale(1.1); }
+    #kk-lp-wrapper .rs-mid-item span {
+        font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 1rem; color: var(--kk-chocolate); letter-spacing: 0.5px; transition: 0.3s;
+    }
+    #kk-lp-wrapper .rs-image-col { 
+        flex: 1.5; background: url('../assets/media/KKJustChocoalteIcedGlazed.jpg') no-repeat center center; 
+        background-size: cover; border-radius: 20px 0 0 20px; margin: 25px 0; box-shadow: -10px 0 30px rgba(0,0,0,0.08);
+        transform-origin: center right;
+    }
+
+    /* --- ABOUT SECTION WITH ROTATING STAMP --- */
+    #kk-lp-wrapper .about-section { 
+        display: flex; align-items: center; justify-content: center; gap: 70px; 
+        padding: 100px 6vw; background: var(--kk-white); 
+    }
+    #kk-lp-wrapper .stamp-container { width: 200px; height: 200px; flex-shrink: 0; }
+    #kk-lp-wrapper .about-stamp { 
+        width: 100%; height: 100%; 
+        animation: spin-stamp 15s linear infinite; 
+        transform-origin: center;
+    }
+    @keyframes spin-stamp { 100% { transform: rotate(360deg); } }
+    
+    #kk-lp-wrapper .about-right { max-width: 800px; }
+    #kk-lp-wrapper .about-subtitle { color: var(--kk-red); font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; display: block; }
+    #kk-lp-wrapper .about-right h2 { font-size: clamp(2.4rem, 3.5vw, 3.2rem); color: var(--kk-green); margin-bottom: 20px; line-height: 1.1; letter-spacing:-0.5px;}
+    #kk-lp-wrapper .about-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; }
+    #kk-lp-wrapper .about-row p { max-width: 550px; font-size: 1.25rem; }
+
+    /* --- ANATOMY SECTION (Image 1 Section) --- */
+    #kk-lp-wrapper .anatomy-section {
+        background: var(--kk-dark); padding: 100px 6vw;
+        display: flex; align-items: center; justify-content: center; gap: 50px;
+        color: var(--kk-white); position: relative; overflow: hidden;
+    }
+    #kk-lp-wrapper .anatomy-bg-glow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        width: 600px; height: 600px; background: radial-gradient(circle, rgba(74,32,18,0.6) 0%, rgba(35,17,11,0) 70%); z-index: 0;
+    }
+    #kk-lp-wrapper .anatomy-col { display: flex; flex-direction: column; gap: 80px; flex: 1; z-index: 2; }
+    #kk-lp-wrapper .anatomy-col.left { align-items: flex-end; text-align: right; }
+    #kk-lp-wrapper .anatomy-col.right { align-items: flex-start; text-align: left; }
+    
+    #kk-lp-wrapper .anatomy-item { display: flex; align-items: center; gap: 20px; max-width: 320px; transition: 0.4s; cursor: default;}
+    #kk-lp-wrapper .anatomy-item:hover { transform: scale(1.05); }
+    #kk-lp-wrapper .anatomy-col.left .anatomy-item { flex-direction: row-reverse; }
+    
+    #kk-lp-wrapper .a-icon { width: 55px; height: 55px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: rgba(255,255,255,0.05); transition: 0.4s; }
+    #kk-lp-wrapper .anatomy-item:hover .a-icon { background: rgba(255,255,255,0.15); border-color: var(--kk-white); box-shadow: 0 0 20px rgba(255,255,255,0.2); }
+    #kk-lp-wrapper .a-icon svg { width: 24px; height: 24px; fill: none; stroke: var(--kk-white); stroke-width: 1.5; }
+    #kk-lp-wrapper .a-text h4 { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: var(--kk-white); font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 8px 0; }
+    #kk-lp-wrapper .a-text p { color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.4; margin: 0; }
+    #kk-lp-wrapper .anatomy-center-img { flex: 1.2; text-align: center; position: relative; z-index: 3; }
+    @keyframes slowRotate {
+        100% { transform: rotate(360deg); }
+    }
+    #kk-lp-wrapper .anatomy-center-img img { 
+        width: 100%; max-width: 450px; 
+        filter: drop-shadow(0 30px 40px rgba(0,0,0,0.8)); 
+        animation: slowRotate 30s linear infinite;
+    }
+
+    /* --- THE LINEUP --- */
+    #kk-lp-wrapper .menu-section { padding: 100px 6vw; background: var(--kk-cream); text-align: center; }
+    #kk-lp-wrapper .menu-header { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 60px; }
+    #kk-lp-wrapper .menu-header::before, #kk-lp-wrapper .menu-header::after { 
+        content: ''; display: block; width: 40px; height: 4px; 
+        background-image: radial-gradient(circle, var(--kk-green) 2.5px, transparent 2.5px); 
+        background-size: 10px 10px; background-position: center;
+    }
+    #kk-lp-wrapper .menu-header h2 { font-size: 3rem; }
+
+    #kk-lp-wrapper .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; }
+    #kk-lp-wrapper .menu-card { 
+        background: var(--kk-white); border-radius: 12px; overflow: hidden; 
+        border: 2px solid transparent; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); cursor: pointer; display: flex; flex-direction: column; text-align: left;
+    }
+    #kk-lp-wrapper .menu-card:hover { border-color: var(--kk-green); box-shadow: 0 15px 30px rgba(0,0,0,0.12); transform: translateY(-8px); }
+    #kk-lp-wrapper .menu-img-wrap { 
+        height: 220px; overflow: hidden; position: relative; width: 100%;
+    }
+    #kk-lp-wrapper .menu-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s cubic-bezier(0.25, 1, 0.5, 1); }
+    #kk-lp-wrapper .menu-card:hover img { transform: scale(1.08) rotate(1deg); }
+    #kk-lp-wrapper .menu-content { 
+        padding: 25px 20px; display: flex; flex-direction: column; flex: 1; background: var(--kk-white); transition: 0.4s;
+    }
+    #kk-lp-wrapper .menu-content h3 { font-family: 'Gelica SemiBold', serif; font-size: 1.4rem; color: var(--kk-chocolate); margin-bottom: 12px; }
+    #kk-lp-wrapper .menu-content p { font-family: 'Brandon Grotesque Regular', sans-serif; font-size: 1.05rem; line-height: 1.5; color: rgba(56, 26, 16, 0.85); margin-bottom: 25px; flex: 1; }
+    #kk-lp-wrapper .menu-content .btn-solid-red { font-size: 0.85rem; padding: 12px; width: 100%; border-radius: 6px; }
+
+    /* --- CORPORATE SECTION REDESIGN --- */
+    #kk-lp-wrapper .corp-section { background: var(--kk-dark); padding: 80px 6vw; display: flex; flex-direction: column; gap: 50px; position: relative; overflow: hidden; color: var(--kk-white); }
+    #kk-lp-wrapper .corp-pattern { position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.05) 2px, transparent 2px); background-size: 30px 30px; opacity: 0.8; z-index: 0; }
+    
+    #kk-lp-wrapper .corp-top { display: flex; align-items: center; justify-content: space-between; gap: 50px; position: relative; z-index: 2; }
+    #kk-lp-wrapper .corp-text { width: 45%; }
+    #kk-lp-wrapper .corp-tag { color: var(--kk-red); font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; display: block; }
+    #kk-lp-wrapper .corp-text h2 { color: var(--kk-white); font-size: clamp(2.8rem, 4vw, 4rem); line-height: 1.1; margin-bottom: 25px; letter-spacing: -1px; }
+    #kk-lp-wrapper .corp-text p { color: rgba(255,255,255,0.85); font-size: 1.15rem; line-height: 1.6; margin-bottom: 35px; }
+    
+    #kk-lp-wrapper .corp-img { width: 55%; text-align: right; }
+    #kk-lp-wrapper .corp-img img { width: 100%; max-width: 650px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6)); }
+
+    #kk-lp-wrapper .corp-bottom { 
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; 
+        background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); 
+        border-radius: 16px; padding: 40px 30px; position: relative; z-index: 2;
+    }
+    #kk-lp-wrapper .c-feat-new { text-align: center; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 10px; }
+    #kk-lp-wrapper .c-feat-new:not(:last-child)::after { content: ''; position: absolute; right: -10px; top: 10%; height: 80%; width: 1px; background: rgba(255,255,255,0.1); }
+    #kk-lp-wrapper .c-icon { width: 50px; height: 50px; border: 1px solid var(--kk-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; background: rgba(200,16,46,0.05); transition: 0.3s;}
+    #kk-lp-wrapper .c-feat-new:hover .c-icon { background: var(--kk-red); box-shadow: 0 5px 15px rgba(200,16,46,0.3); }
+    #kk-lp-wrapper .c-icon svg { width: 24px; height: 24px; fill: none; stroke: var(--kk-red); stroke-width: 1.5; transition: 0.3s; }
+    #kk-lp-wrapper .c-feat-new:hover .c-icon svg { stroke: var(--kk-white); }
+    #kk-lp-wrapper .c-feat-new h4 { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: white; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    #kk-lp-wrapper .c-feat-new p { color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.5; margin: 0; }
+
+    /* --- THEATRE SECTION WITH VIDEO EMBED --- */
+    #kk-lp-wrapper .theatre-section { display: flex; align-items: center; justify-content: space-between; gap: 50px; padding: 100px 6vw; background: var(--kk-white); border-bottom: 1px solid rgba(0,0,0,0.05);}
+    #kk-lp-wrapper .th-left { width: 30%; }
+    #kk-lp-wrapper .th-left .tag { color: var(--kk-red); font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2.5px; display: block; margin-bottom: 15px; }
+    #kk-lp-wrapper .th-left h2 { font-size: 3rem; margin-bottom: 20px; line-height: 1.1; }
+    #kk-lp-wrapper .th-left p { margin-bottom: 30px; font-size: 1.15rem; }
+    #kk-lp-wrapper .th-location { display: flex; gap: 15px; margin-bottom: 35px; }
+    #kk-lp-wrapper .th-location svg { width: 24px; height: 24px; fill: none; stroke: var(--kk-green); stroke-width: 2; flex-shrink: 0; margin-top: 2px; }
+    #kk-lp-wrapper .th-location div { font-size: 1.05rem; line-height: 1.5; }
+    
+    #kk-lp-wrapper .th-mid { width: 35%; border-radius: 16px; overflow: hidden; aspect-ratio: 4/5; background: #000; box-shadow: 0 20px 40px rgba(0,0,0,0.15); position: relative;}
+    #kk-lp-wrapper .th-mid video { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: 0.4s; }
+    #kk-lp-wrapper .th-mid:hover video { opacity: 1; transform: scale(1.02); }
+    
+    #kk-lp-wrapper .th-right { width: 25%; display: flex; flex-direction: column; gap: 25px; }
+    #kk-lp-wrapper .th-feat { display: flex; align-items: center; gap: 18px; transition: 0.3s; cursor: default; }
+    #kk-lp-wrapper .th-feat:hover { transform: translateX(10px); }
+    #kk-lp-wrapper .th-feat svg { width: 30px; height: 30px; fill: none; stroke: var(--kk-red); stroke-width: 2; flex-shrink: 0; }
+    #kk-lp-wrapper .th-feat span { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;}
+    #kk-lp-wrapper .th-feat:hover span { color: var(--kk-green); }
+
+    /* --- INSTAGRAM FEED --- */
+    #kk-lp-wrapper .feed-section { padding: 80px 6vw; background: var(--kk-white); }
+    #kk-lp-wrapper .feed-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+    #kk-lp-wrapper .feed-title-wrap { display: flex; align-items: flex-start; gap: 15px; }
+    #kk-lp-wrapper .feed-title-wrap svg.camera { animation: bounce 2s infinite; display: inline-block;}
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    #kk-lp-wrapper .feed-title-text h2 { font-size: 2.5rem; margin: 0 0 5px 0; letter-spacing: -0.5px; }
+    #kk-lp-wrapper .feed-title-text p { margin: 0; font-size: 1.1rem; color: #666; max-width: 500px; }
+    #kk-lp-wrapper .feed-title-text a { color: var(--kk-red); text-decoration: none; font-weight: 600; }
+    
+    #kk-lp-wrapper .feed-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; }
+    #kk-lp-wrapper .feed-grid img { width: 100%; display: block; }
+    #kk-lp-wrapper .feed-item { border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative; background: #331; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);}
+    #kk-lp-wrapper .feed-item:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 15px 30px rgba(0,0,0,0.15); z-index: 2; }
+    #kk-lp-wrapper .feed-item.brown-1 { background: radial-gradient(circle, #6b3310 0%, #2b1104 100%); }
+    #kk-lp-wrapper .feed-item.brown-2 { background: radial-gradient(circle, #4a210d 0%, #1a0a02 100%); }
+    #kk-lp-wrapper .feed-item.tan-1 { background: radial-gradient(circle, #b88656 0%, #875c2e 100%); }
+    #kk-lp-wrapper .feed-item.red-1 { background: radial-gradient(circle, #5e1c1e 0%, #2b0c0d 100%); }
+    #kk-lp-wrapper .feed-item.dark-1 { background: radial-gradient(circle, #2a110a 0%, #0d0402 100%); }
+    #kk-lp-wrapper .feed-item.black-promo { background: #0b0705; color: white; flex-direction: column; text-align: center; border: 1px solid rgba(255,255,255,0.1);}
+    #kk-lp-wrapper .feed-item.black-promo h3 { font-family: 'Brandon Grotesque Black', sans-serif; font-size: 3rem; color: white; margin: 0; line-height: 1; }
+    #kk-lp-wrapper .feed-item.black-promo p { font-family: 'Brandon Grotesque Regular', sans-serif; font-weight: bold; font-size: 0.8rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; margin: 5px 0 0 0; }
+
+    /* --- FEATURES STRIP --- */
+    #kk-lp-wrapper .features-strip { 
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; 
+        padding: 70px 6vw; background: var(--kk-cream); border-top: 1px solid rgba(0,0,0,0.05); text-align: center;
+    }
+    #kk-lp-wrapper .s-feat { display: flex; flex-direction: column; align-items: center; padding: 0 15px; cursor: default; transition: 0.4s;}
+    #kk-lp-wrapper .s-feat:hover { transform: translateY(-5px); }
+    #kk-lp-wrapper .feat-icon-circle { 
+        width: 80px; height: 80px; border-radius: 50%; background: var(--kk-white); 
+        display: flex; align-items: center; justify-content: center; 
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06); margin-bottom: 25px; border: none; transition: 0.4s;
+    }
+    #kk-lp-wrapper .s-feat:hover .feat-icon-circle { box-shadow: 0 12px 30px rgba(0,0,0,0.1); transform: scale(1.05); }
+    #kk-lp-wrapper .feat-icon-circle span { font-size: 2.2rem; }
+    #kk-lp-wrapper .s-text h4 { font-family: 'Gelica SemiBold', serif; font-size: 1.3rem; color: var(--kk-chocolate); margin: 0 0 12px 0; }
+    #kk-lp-wrapper .s-text p { font-size: 1.1rem; font-family: 'Brandon Grotesque Regular', sans-serif; color: rgba(74,32,18,0.75); margin: 0; }
+
+    /* --- FAQ SECTION --- */
+    #kk-lp-wrapper .faq-section { 
+        display: flex; justify-content: space-between; align-items: flex-start; padding: 100px 6vw; background: var(--kk-white); gap: 60px;
+    }
+    #kk-lp-wrapper .faq-left { width: 35%; }
+    #kk-lp-wrapper .faq-left h2 { font-size: 4.5rem; line-height: 1.05; letter-spacing: -1px; }
+    #kk-lp-wrapper .faq-left .red-text { color: var(--kk-red); }
+    
+    #kk-lp-wrapper .faq-right { width: 65%; display: flex; flex-direction: column; }
+    #kk-lp-wrapper details.faq-item { border-bottom: 1px solid rgba(0,0,0,0.15); padding: 25px 0; transition: 0.3s; }
+    #kk-lp-wrapper details.faq-item:hover { background: rgba(0,0,0,0.01); padding-left: 10px; padding-right: 10px; }
+    #kk-lp-wrapper details.faq-item summary {
+        font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 1.2rem; color: var(--kk-chocolate);
+        cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;
+    }
+    #kk-lp-wrapper details.faq-item summary::-webkit-details-marker { display: none; }
+    #kk-lp-wrapper details.faq-item summary::after {
+        content: '+'; font-size: 1.5rem; font-weight: 400; width: 32px; height: 32px; 
+        border: 2px solid var(--kk-chocolate); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    #kk-lp-wrapper details.faq-item[open] summary::after { content: '−'; color: var(--kk-red); border-color: var(--kk-red); transform: rotate(180deg); }
+    #kk-lp-wrapper details.faq-item summary:hover { color: var(--kk-red); }
+    #kk-lp-wrapper details.faq-item summary:hover::after { border-color: var(--kk-red); }
+    #kk-lp-wrapper .faq-answer { padding-top: 20px; font-size: 1.1rem; color: rgba(74,32,18,0.85); line-height: 1.6; }
+    
+    #kk-lp-wrapper .faq-btn-wrap { text-align: right; margin-top: 40px; }
+
+    /* --- PREMIUM FOOTER --- */
+    #kk-lp-wrapper .site-footer { 
+        background: var(--kk-green); color: var(--kk-white); padding: 80px 6vw 40px; 
+        display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px;
+    }
+    #kk-lp-wrapper .f-brand { display: flex; flex-direction: column; gap: 20px; }
+    #kk-lp-wrapper .f-brand img { height: 75px; width: fit-content; transition: 0.3s; opacity: 0.9;}
+    #kk-lp-wrapper .f-brand img:hover { transform: scale(1.05); opacity: 1; }
+    #kk-lp-wrapper .f-brand p { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; line-height: 1.6; color: rgba(255,255,255,0.7); max-width: 300px; }
+    
+    #kk-lp-wrapper .f-col { display: flex; flex-direction: column; gap: 15px; }
+    #kk-lp-wrapper .f-col h4 { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: var(--kk-dough); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px; }
+    #kk-lp-wrapper .f-col a { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: white; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; position: relative; width: fit-content; opacity: 0.85; }
+    #kk-lp-wrapper .f-col a::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0; background: var(--kk-white); transition: 0.3s; }
+    #kk-lp-wrapper .f-col a:hover { color: var(--kk-white); opacity: 1; }
+    #kk-lp-wrapper .f-col a:hover::after { width: 100%; }
+    
+    #kk-lp-wrapper .f-social { display: flex; gap: 20px; align-items: center; margin-top: 10px; }
+    #kk-lp-wrapper .f-social a { opacity: 0.8; transition: 0.3s; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; }
+    #kk-lp-wrapper .f-social a:hover { opacity: 1; border-color: var(--kk-white); transform: translateY(-3px); background: rgba(255,255,255,0.1); }
+    #kk-lp-wrapper .f-social svg { width: 20px; height: 20px; fill: none; stroke: white; stroke-width: 1.5; }
+    
+    #kk-lp-wrapper .footer-bottom { grid-column: 1 / -1; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.9rem; color: rgba(255,255,255,0.5); font-family: 'Brandon Grotesque Regular', sans-serif;}
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 1024px) {
+        #kk-lp-wrapper .nav-links { display: none; }
+        
+        #kk-lp-wrapper .hero-bottom-bar { flex-direction: row; flex-wrap: wrap; gap: 15px; padding: 15px 4vw;}
+        #kk-lp-wrapper .hero-stats { gap: 15px; justify-content: center; }
+        #kk-lp-wrapper .stat-icon { width: 32px; height: 32px; }
+        #kk-lp-wrapper .stat-icon svg { width: 14px; height: 14px; }
+        #kk-lp-wrapper .stat-text { font-size: 0.65rem; }
+        #kk-lp-wrapper .stat-text span { font-size: 0.8rem; }
+        
+        #kk-lp-wrapper .masters-lto, #kk-lp-wrapper .about-section { flex-direction: column; text-align: center; padding: 60px 6vw; }
+        #kk-lp-wrapper .masters-image-col, #kk-lp-wrapper .masters-text-col, #kk-lp-wrapper .about-right { width: 100%; }
+        #kk-lp-wrapper .action-buttons { flex-direction: column; }
+        #kk-lp-wrapper .about-row { justify-content: center; }
+        #kk-lp-wrapper .about-row { flex-direction: column; align-items: center; gap: 25px;}
+        
+        #kk-lp-wrapper .rich-soft-section { flex-direction: column; padding-left: 0; }
+        #kk-lp-wrapper .rs-text-col { text-align: center; padding: 60px 6vw; align-items: center; }
+        #kk-lp-wrapper .rs-mid-col { padding: 0 6vw 60px; }
+        #kk-lp-wrapper .rs-image-col { min-height: 400px; border-radius: 0; margin: 0;}
+        
+        #kk-lp-wrapper .anatomy-section { flex-direction: column; padding: 60px 6vw; gap: 40px;}
+        #kk-lp-wrapper .anatomy-col.left, #kk-lp-wrapper .anatomy-col.right { align-items: center; text-align: center; gap: 30px; }
+        #kk-lp-wrapper .anatomy-col.left .anatomy-item, #kk-lp-wrapper .anatomy-item { flex-direction: column; }
+        
+        #kk-lp-wrapper .menu-grid { grid-template-columns: repeat(1, 1fr); }
+        
+        #kk-lp-wrapper .corp-top { flex-direction: column; text-align: center; }
+        #kk-lp-wrapper .corp-text, #kk-lp-wrapper .corp-img { width: 100%; text-align: center; }
+        #kk-lp-wrapper .c-feat-new:not(:last-child)::after { display: none; }
+        
+        #kk-lp-wrapper .feed-grid { grid-template-columns: repeat(2, 1fr); }
+        #kk-lp-wrapper .feed-top { flex-direction: column; gap: 20px; align-items: flex-start; }
+        
+        #kk-lp-wrapper .theatre-section { flex-direction: column; text-align: center; padding: 60px 6vw;}
+        #kk-lp-wrapper .th-left, #kk-lp-wrapper .th-mid, #kk-lp-wrapper .th-right { width: 100%; }
+        #kk-lp-wrapper .th-location, #kk-lp-wrapper .th-feat { justify-content: center; }
+        #kk-lp-wrapper .th-mid { aspect-ratio: 16/9; margin: 20px 0; }
+        
+        #kk-lp-wrapper .features-strip { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+        #kk-lp-wrapper .faq-section { flex-direction: column; padding: 60px 6vw;}
+        #kk-lp-wrapper .faq-left, #kk-lp-wrapper .faq-right { width: 100%; }
+        
+        #kk-lp-wrapper .site-footer { grid-template-columns: 1fr 1fr; text-align: center; gap: 40px; }
+        #kk-lp-wrapper .f-brand, #kk-lp-wrapper .f-col { align-items: center; }
+        #kk-lp-wrapper .footer-bottom { margin-top: 20px; }
+    }
+    @media (max-width: 600px) {
+        #kk-lp-wrapper .features-strip { grid-template-columns: 1fr; }
+        #kk-lp-wrapper .site-footer { grid-template-columns: 1fr; }
+        #kk-lp-wrapper .hero-bottom-bar { flex-direction: column; justify-content: center; padding: 20px 4vw;}
+        #kk-lp-wrapper .pause-btn { margin-left: auto; margin-right: auto; margin-top: 10px; }
+    }
+    #kk-lp-wrapper .stat-text br {
+        display: none;
+    }
+    body.kk-locked { overflow: hidden !important; }
+    
+    #kk-lp-wrapper .btn-solid-red {
+    MARGIN-BOTTOM: 0;
+}
+#kk-lp-wrapper .pause-btn {
+    DISPLAY: NONE;
+}
+#kk-lp-wrapper .features-strip {
+    DISPLAY: NONE;
+}
+#kk-lp-wrapper .footer-bottom P {
+    COLOR: #fff;
+}
+a.nav-link {
+    font-weight: bold;
+}
+a.nav-link:hover {
+   color: #fff;
+}
+.nav-order-btn:hover {
+    color: #fff;
+}
+/* Container for the running strip */
+.running-strip {
+    background-color: #008265;
+    color: #ffffff;
+    padding: 6px 0; /* Your updated padding */
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* The moving tracks */
+.marquee-track {
+    display: flex;
+    flex-shrink: 0;
+    width: max-content; /* This fixes the gap by sizing perfectly to the text */
+    animation: scroll 20s linear infinite;
+}
+
+/* The individual text phrases */
+.marquee-track span {
+    padding: 0 30px; 
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Brandon Grotesque Regular', sans-serif; /* Your updated font */
+    text-transform: none; /* Your updated transform */
+}
+
+/* Keyframes for the continuous scrolling effect */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Optional: Pause the animation on hover */
+.running-strip:hover .marquee-track {
+    animation-play-state: paused;
+}
+.hero-bottom-bar.gsap-fade-up-hero {
+    display: none !important;
+}
+      section.anatomy-section {
+    display: none !important;
+}
+      .menu-header {
+    margin-bottom: 0 !important;
+}
+      p.menu-subtext {
+    margin-bottom: 40px !important;
+}
+      #kk-lp-wrapper .slider-btn {
+    margin-top: -9%;
+}
+      #kk-lp-wrapper .slider-btn {
+    padding: 10px !important;
+}
+      .corp-text p {
+    margin-bottom: 12px !important;
+}
+      #kk-lp-wrapper .hl-left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -76px;
+    width: 157px;
+    height: 100%;
+    background: var(--kk-red);
+    transform: skewX(-15deg);
+    z-index: 1;
+    z-index: 99;
+}
+#kk-lp-wrapper .hl-left-content img {
+    width: 100%;
+    max-width: 100% !important;
+   
+}
+      #kk-lp-wrapper .hl-left {
+    padding: 0 !important;
+    width: 90% !important;
+}
+      #kk-lp-wrapper .hl-right {
+    width: 55%;
+    padding: 0px 5vw 00px 8vw;
+      }
+      #kk-lp-wrapper .hl-right {
+    
+    padding: 0px 0vw 00px 0vw 30px !important;
+      }
+      .hl-right {
+    padding-left: 30px !important;
+}
+      div#multi-location-wrapper {
+    background: #fcfaf7 !important;
+}
+      #kk-lp-wrapper .hl-left-content img {
+    width: 100%;
+    max-width: 450px;
+    filter: unset !important;
+}
+      #kk-lp-wrapper .hl-left {
+    width: 45%;
+    background: #c20112;
+      }
+      #kk-lp-wrapper .hero-container {   
+    height: 77vh !important;
+      }
+      #kk-lp-wrapper .hero-content h1 {
+    margin-top: 26%;
+}
+      #kk-lp-wrapper .hl-right {
+    padding: 0 0 0 30px !important;
+}
+      
+      @media(max-width:740px){
+       a.btn-solid-red {
+    font-size: 12px !important;
+    font-weight: normal !important;
+    padding: 8px 10px !important;
+}#kk-lp-wrapper .hero-container {
+    height: 88vh !important;
+} 
+    #kk-lp-wrapper .modal-title {
+    font-family: 'Gelica SemiBold', serif;
+    font-size: 1.2rem !important;
+      }
+        #kk-lp-wrapper .order-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 25px 20px;
+    flex: 1;
+    min-width: 100px !important;
+        }
+        #kk-lp-wrapper .modal-close {
+    padding: 4px !important;
+    margin: 0 !important;
+}#kk-lp-wrapper .hl-left {
+    padding: 0 !important;
+    width: 100% !important;
+}#kk-lp-wrapper .hl-right {
+    padding: 25px !important;
+}
+        #kk-lp-wrapper .faq-left h2 {
+    font-size: 2.5rem;
+        }
+        #kk-lp-wrapper .faq-left h2 br {
+    display: none;
+}
+      }
+      .page-content.row {
+    max-width: 100% !important;
+}
+section.about-hero {
+    margin-top: 100px;
+}
+      #kk-lp-wrapper .menu-content .btn-solid-red {
+   
+    padding: 10px 6px !important;
+   
+}
+#kk-lp-wrapper .nav-link {   
+    color: #fff !important;
+      }
+#kk-lp-wrapper .menu-section.onlyDoughnuts {
+    padding: 0px 6vw !important;
+}
+section.masters-lto {
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 15px;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+#kk-lp-wrapper .about-section {    
+    padding: 50px 6vw;
+}
+section.masters-lto {
+    margin-bottom: 35px;
+}
+
+
+#kk-lp-wrapper .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 70px 6vw;
+    background: var(--kk-white);
+}
+
+
+      section#menu {
+    padding: 40px 6vw !important;
+}
+      #kk-lp-wrapper .feed-section {
+    padding: 45px 6vw;
+   
+}
+      div#faq {
+    max-width: 1340px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 15px;
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+    margin-bottom: 50px;
+}
+      #kk-lp-wrapper .feed-section {
+   
+    background: #fcfaf7;
+}
+   div#kk-lp-wrapper {
+    background: #fbf9f6;
+}
+      @media(max-width:740px){
+       #kk-lp-wrapper .menu-header h2 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+} section.masters-lto {
+    margin: 20px;
+  gap: 20px;
+}#kk-lp-wrapper .masters-text-col h2 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+}section.masters-lto {
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+}#kk-lp-wrapper .about-section {   
+    gap: 0px;
+}
+        #kk-lp-wrapper .stamp-container {
+    width: 229px;
+    height: 220px;
+        }
+        #kk-lp-wrapper .about-right h2 {
+    font-size: 1.8rem;
+    font-weight: normal !important;
+    line-height: 1.2 !important;
+}section#about * {
+    color: #cdcdcd !important;
+}#kk-lp-wrapper .corp-text h2 {
+    font-size: 1.8rem !important;
+}#kk-lp-wrapper .corp-top {
+    gap: 20 !important;
+}#kk-lp-wrapper .hl-right h2 {
+    font-size: 1.8rem !important;
+}
+        #kk-lp-wrapper .hl-right h3 {
+    font-family: 'Gelica SemiBold', serif;
+    font-size: 1.2rem;
+        }
+        #kk-lp-wrapper .feed-title-text h2 {
+    font-size: 1.8rem !important;
+        }
+        #kk-lp-wrapper .faq-left h2 {
+    font-size: 1.8rem !important;
+        }
+        #kk-lp-wrapper .faq-section {
+    margin: 0 20px !important;
+}#kk-lp-wrapper .feed-section {
+    padding: 30px 6vw;    
+}#kk-lp-wrapper details.faq-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 6px 0 !important;
+}#kk-lp-wrapper .faq-section {  
+    gap: 20px;
+}
+      }
+      
+      
+      #kk-lp-wrapper nav {
+    background: #fff;
+}
+#kk-lp-wrapper .nav-link {
+    color: #166936 !important;
+}
+#kk-lp-wrapper .running-strip {
+    background-color: #166936;
+}
+#kk-lp-wrapper .menu-header h2 {
+    color: #166936;
+}
+#kk-lp-wrapper .menu-header h2 span {
+    color: #c8102e;
+}
+section.masters-lto {
+    background: none !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+img.mesh-bg {
+    filter: brightness(2) contrast(7.5) grayscale(1);
+}
+#kk-lp-wrapper .masters-text-col h2 {
+    color: #fff;
+}
+#kk-lp-wrapper .masters-text-col p {
+    color: #fff;
+}
+.masters-text-col .btn-outline.dark {
+    background: #fff !important;
+    color: #000 !important;
+    border-color: #c8102e !important;
+}
+      section#new-drop {
+    background: url(../assets/media/345643432423.jpg) !important;
+    background-size: cover !important;
+    background-position: center !i;
+}
+     section#new-drop .masters-image-col .box-img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.15));
+    transform: rotate(3deg);
+}
+      section#new-drop h2 {
+    color: #2e2e2e !important;
+}
+      section#new-drop h2 p {
+    color: #333 !important;
+}
+      section#new-drop .badge-bestseller {
+    display: none;
+}
+      #kk-lp-wrapper section#new-drop .masters-text-col p {
+    color: #333;
+}
+      section#corporate {
+    background: url(../assets/media/345643432423.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+      #kk-lp-wrapper .corp-text h2 {
+    color: #333;
+}
+      #kk-lp-wrapper .corp-text p {
+    color: #333;
+}
+      #kk-lp-wrapper .corp-bottom {  
+    background: rgb(22 105 54);
+    border: 2px solid rgb(16 72 38 / 41%);
+      }
+      #kk-lp-wrapper .c-icon svg {   
+    stroke: #ffffff;
+      }
+      #kk-lp-wrapper .c-icon {    
+    border: 1px solid #ffffff;
+      }
+      
+      #kk-lp-wrapper .hero-circle {  
+    border: 3px solid #c8102e !important; 
+    color: #c8102e !important;
+      }
+      #kk-lp-wrapper .hero-circle:hover {    
+    background: #c8102e !important;
+    color: var(--kk-white) !important;
+}
+      section.kk-hero {
+    margin-top: 110px;
+}
+      .kk-input, .kk-select {
+    margin: 0 !important;
+    height: 50px !important;
+    border-radius: 14px !important;
+    border: 1px solid #cbcbcb !important;
+    box-shadow: 0px 0px 0px !important;
+}
+      button#kk-geo-btn, .kk-btn-search {
+    margin: 0 !important;
+    padding: 17px 20px !important;
+}
+      p.kk-store-address span {
+    font-size: 15px;
+    font-family: "Lato" !important;
+}
+      .kk-card-content span {
+    font-family: lato !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    line-height: 1.6;
+}
+      p.kk-store-address {
+    margin: 10px 0 !important;
+}
+      h3.kk-promo-title, p.kk-promo-text {
+    color: #fff !important;
+}
+      .kk-distance-badge {
+    display: none !important;
+}
+      .kk-hero-content h1, .kk-hero-content h1 span {
+    font-family: 'Gelica SemiBold' !important;
+}
+      div#kk-lp-menu-wrapper {
+    margin-top: 95px;
+}
+      @media(max-width:740px){
+       section.kk-hero:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffffc7;
+} 
+      }
+      div#kk-lp-menu-wrapper {
+    overflow-y: hidden;
+}
+      #kk-offers-wrapper .kk-offers-hero {
+    margin-top: 115px !important;
+    height: 430px !important;
+}
+     #kk-offers-wrapper .kk-custom-perks-row,  .hero-smile-arc {
+    display: none !important;
+}
+      #kk-offers-wrapper .kk-custom-perks-row {
+    display: none !important;
+}
+      #kk-offers-wrapper .kk-breadcrumb {
+    display: none !important;
+}
+      section.masters-lto {
+           background: url(../assets/media/bgeandbrown.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+#kk-wrapper .split-section.reverse {
+    padding-top: 0;
+}</style><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Do you have eggless options?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "All Krispy Kreme Doughnuts are 100% Veg and 100% Eggless."
+    }
+  },{
+    "@type": "Question",
+    "name": "How should I store my doughnuts?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Store them at room temperature. Do not refrigerate!"
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you deliver?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "To order from Krispy Kreme in India, you can either visit our website or use food delivery apps like Swiggy, Zomato, or Instamart."
+    }
+  },{
+    "@type": "Question",
+    "name": "What does Krispy Kreme hot light hours mean?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When the Hot Now sign is glowing red, you know it's time to visit one of our Hotlight shops to enjoy a melt-in-your-mouth HOT Original Glazed doughnut, fresh off the line. The magic takes place every single day during our 'Hot Now Hours' both in shop and through the drive thru at our Hotlight shops."
+    }
+  }]
+}
+</script><script src="../assets/vendor/gsap/3.12.2/gsap.min.js"></script><script src="../assets/vendor/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<style type="text/css">/* --- FONT IMPORTS --- */
+    @font-face {
+        font-family: 'Gelica SemiBold';
+        src: url('../assets/media/Gelica-Semi-Bold.otf') format('opentype');
+        font-weight: 600; font-style: normal; font-display: swap;
+    }
+    @font-face {
+        font-family: 'Brandon Grotesque Black';
+        src: url('../assets/media/BrandonGrotesqueBlack.ttf') format('truetype');
+        font-weight: 900; font-style: normal; font-display: swap;
+    }
+    @font-face {
+        font-family: 'Brandon Grotesque Regular';
+        src: url('../assets/media/fonnts.com-Brandon_Grotesque_Regular.otf') format('opentype');
+        font-weight: 400; font-style: normal; font-display: swap;
+    }
+
+    /* --- SCOPED VARIABLES & BASE --- */
+    #kk-lp-wrapper {
+        --kk-chocolate: #202020; 
+        --kk-green: #006241;     
+        --kk-white: #FFFFFF;     
+        --kk-dough: #F5E6CC;     
+        --kk-red: #C8102E;     
+        --kk-cream: #FCFAF7; 
+        --kk-tan: #f0e6d8;
+        --kk-gold: #b38550;
+        --kk-pink: #df3153;
+        --kk-dark: #1a0904; 
+
+        font-family: 'Brandon Grotesque Regular', sans-serif;
+        background-color: var(--kk-white);
+        color: var(--kk-chocolate);
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0; 
+        position: relative;
+    }
+    
+    #kk-lp-wrapper * { box-sizing: border-box; }
+    
+    #kk-lp-wrapper h1, #kk-lp-wrapper h2, #kk-lp-wrapper h3, #kk-lp-wrapper .section-title { 
+        font-family: 'Gelica SemiBold', serif; font-weight: 600; color: var(--kk-chocolate); margin: 0; 
+    }
+    #kk-lp-wrapper p { line-height: 1.5; color: var(--kk-chocolate); font-size: 1.15rem; margin: 0; }
+
+    /* --- GSAP INITIAL STATES --- */
+    #kk-lp-wrapper .gsap-fade-up, #kk-lp-wrapper .gsap-stagger > *, #kk-lp-wrapper .gsap-text-reveal { opacity: 0; transform: translateY(40px); }
+    #kk-lp-wrapper .gsap-fade-in { opacity: 0; }
+
+    /* --- PRELOADER --- */
+    #kk-preloader {
+        position: fixed; inset: 0; background: #F5E6CC; z-index: 99999;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        color: #333; overflow: hidden;
+    }
+    #kk-preloader .loader-content { text-align: center; display: flex; flex-direction: column; align-items: center; }
+    #kk-preloader .loader-donut { width: 140px; height: 140px; object-fit: contain; margin-bottom: 25px; filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.099)); }
+    #kk-preloader .loader-counter { font-family: 'Brandon Grotesque Black', sans-serif; font-size: 3rem; color: #333; line-height: 1; margin-bottom: 10px; font-weight: 900; }
+    #kk-preloader .loader-text { font-family: 'Brandon Grotesque Black', sans-serif; letter-spacing: 5px; font-weight: 900; text-transform: uppercase; font-size: 0.9rem; color: #333; opacity: 0.8; }
+
+    /* --- RUNNING STRIP --- */
+    #kk-lp-wrapper .running-strip {
+        background-color: #008265;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px 0;
+        overflow: hidden;
+        display: flex;
+        white-space: nowrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1001;
+        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    #kk-lp-wrapper .running-strip.hide {
+        transform: translateY(-100%);
+    }
+    #kk-lp-wrapper .marquee-track {
+        display: flex;
+        flex-shrink: 0;
+        min-width: 100%;
+        animation: scroll 20s linear infinite;
+    }
+    #kk-lp-wrapper .marquee-track span {
+        padding: 0 30px; 
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    @keyframes scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+    }
+    #kk-lp-wrapper .running-strip:hover .marquee-track {
+        animation-play-state: paused;
+    }
+
+    /* --- BUTTONS --- */
+    #kk-lp-wrapper .btn-solid-red {
+        background: var(--kk-red); color: var(--kk-white);
+        padding: 10px 28px; border-radius: 4px;
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: 1rem; font-weight: 900;
+        text-transform: uppercase; letter-spacing: 1.5px; text-decoration: none;
+        display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+        transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); border: 2px solid var(--kk-red); cursor: pointer;
+        position: relative; overflow: hidden;
+    }
+    #kk-lp-wrapper .btn-solid-red::after {
+        content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+        transform: skewX(-25deg); z-index: 1; transition: 0.6s ease;
+    }
+    #kk-lp-wrapper .btn-solid-red:hover { background: #a00b24; border-color: #a00b24; box-shadow: 0 8px 20px rgba(200, 16, 46, 0.4); transform: translateY(-3px); }
+    #kk-lp-wrapper .btn-solid-red:hover::after { left: 200%; }
+
+    #kk-lp-wrapper .btn-outline {
+        background: transparent; padding: 10px 24px; border-radius: 4px;
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: 1rem; font-weight: 900;
+        text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none;
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); cursor: pointer;
+    }
+    #kk-lp-wrapper .btn-outline.dark { color: var(--kk-chocolate); border: 2px solid rgba(74,32,18,0.3); }
+    #kk-lp-wrapper .btn-outline.dark:hover { background: var(--kk-chocolate); color: var(--kk-white); border-color: var(--kk-chocolate); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(74,32,18,0.2); }
+    #kk-lp-wrapper .btn-outline.green { color: var(--kk-green); border: 2px solid var(--kk-green); }
+    #kk-lp-wrapper .btn-outline.green:hover { background: var(--kk-green); color: var(--kk-white); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 98, 65, 0.3); }
+
+    /* --- HEADER --- */
+    #kk-lp-wrapper nav { 
+        position: fixed; top: 38px; left: 0; width: 100%; padding: 15px 5vw; 
+        display: flex; justify-content: space-between; align-items: center; 
+        z-index: 1000; transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        background: linear-gradient(90deg, rgba(43,18,10,0.95) 0%, rgba(74,33,17,0.95) 50%, rgba(43,18,10,0.95) 100%);
+        backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    #kk-lp-wrapper nav.strip-hidden { top: 0; }
+    #kk-lp-wrapper nav.scrolled { padding: 10px 5vw; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    #kk-lp-wrapper .nav-logo img { height: 42px; transition: transform 0.4s ease; }
+    #kk-lp-wrapper .nav-logo:hover img { transform: scale(1.05); }
+    #kk-lp-wrapper .nav-links { display: flex; align-items: center; gap: 35px; }
+    #kk-lp-wrapper .nav-link { 
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: 0.95rem; font-weight: 900;
+        letter-spacing: 2px; color: var(--kk-gold); text-decoration: none; text-transform: uppercase; 
+        transition: 0.3s ease; opacity: 0.85; position: relative;
+    }
+    #kk-lp-wrapper .nav-link::after {
+        content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0;
+        background-color: var(--kk-white); transition: width 0.3s ease;
+    }
+    #kk-lp-wrapper .nav-link:hover { color: var(--kk-white); opacity: 1; }
+    #kk-lp-wrapper .nav-link:hover::after { width: 100%; }
+
+    /* --- HERO SECTION --- */
+    #kk-lp-wrapper .hero-wrapper {
+        position: relative;
+        margin-bottom: 90px;
+    }
+    #kk-lp-wrapper .hero-container { 
+        position: relative; height: 68vh; min-height: 500px; width: 100%; overflow: hidden; 
+    }
+    
+    #kk-lp-wrapper .hero-bg-video {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;
+    }
+    
+    #kk-lp-wrapper .hero-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 1; }
+    
+    #kk-lp-wrapper .hero-content { 
+        position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); 
+        z-index: 2; padding: 0 4vw; width: 100%; max-width: 800px; 
+        perspective: 1000px; text-align: center; display: flex; flex-direction: column; align-items: center; 
+    }
+    #kk-lp-wrapper .hero-content h1 { font-size: clamp(3rem, 5vw, 5.5rem); color: var(--kk-white); line-height: 1.05; margin-bottom: 30px; text-transform: uppercase; letter-spacing: -1px; text-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+
+    /* GLASS MODAL */
+    #kk-lp-wrapper .glass-modal-overlay {
+        position: fixed; inset: 0; 
+        background: rgba(0, 0, 0, 0.6); 
+        z-index: 10000; 
+        display: flex; align-items: center; justify-content: center; 
+        opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+    }
+    #kk-lp-wrapper .glass-modal-overlay.active {
+        opacity: 1; pointer-events: auto;
+    }
+    #kk-lp-wrapper .glass-modal {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 20px; padding: 50px 40px; 
+        text-align: center; width: 90%; max-width: 650px; 
+        transform: scale(0.95); transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        position: relative;
+    }
+    #kk-lp-wrapper .glass-modal-overlay.active .glass-modal { transform: scale(1); }
+    #kk-lp-wrapper .modal-close {
+        position: absolute; top: 15px; right: 20px; font-size: 2.5rem; line-height: 1; 
+        color: white; cursor: pointer; background: none; border: none; opacity: 0.7; transition: 0.3s;
+    }
+    #kk-lp-wrapper .modal-close:hover { opacity: 1; transform: rotate(90deg); }
+    #kk-lp-wrapper .modal-title { font-family: 'Gelica SemiBold', serif; font-size: 2.2rem; color: white; margin-bottom: 40px; text-shadow: 0 4px 10px rgba(0,0,0,0.3);}
+    
+    #kk-lp-wrapper .order-options { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    #kk-lp-wrapper .order-card {
+        background: rgba(255,255,255,0.9); border-radius: 16px; padding: 25px 20px; flex: 1; min-width: 150px; 
+        display: flex; flex-direction: column; align-items: center; gap: 15px; 
+        text-decoration: none; transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        color: var(--kk-chocolate); font-family: 'Brandon Grotesque Black', sans-serif; font-size: 1.1rem; text-transform: uppercase;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    #kk-lp-wrapper .order-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.25); background: white; }
+    #kk-lp-wrapper .order-card img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 2px solid var(--kk-cream);}
+
+    /* --- HERO CIRCLES OVERLAY --- */
+    #kk-lp-wrapper .hero-circles-container {
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        z-index: 10;
+    }
+    #kk-lp-wrapper .hero-circle {
+        width: 120px;
+        height: 120px;
+        background: var(--kk-white);
+        border: 3px solid var(--kk-chocolate);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--kk-chocolate);
+        font-family: 'Brandon Grotesque Black', sans-serif;
+        font-weight: 900;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #kk-lp-wrapper .hero-circle:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        background: var(--kk-chocolate);
+        color: var(--kk-white);
+    }
+    #kk-lp-wrapper .hero-circle svg {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 8px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.5;
+        transition: 0.3s ease;
+    }
+
+    /* --- EXACT 3-COLUMN RICH, SOFT SECTION --- */
+    #kk-lp-wrapper .rich-soft-section { 
+        display: flex; background: var(--kk-cream); min-height: 550px; padding-left: 6vw; align-items: stretch; border-bottom: 1px solid rgba(0,0,0,0.05); overflow: hidden;
+    }
+    #kk-lp-wrapper .rs-text-col { 
+        flex: 1.2; display: flex; flex-direction: column; justify-content: center; 
+        padding: 60px 2vw 60px 0; 
+    }
+    #kk-lp-wrapper .rs-text-col h2 { 
+        font-size: clamp(3rem, 4vw, 4rem); line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    #kk-lp-wrapper .rs-text-col h4 { 
+        color: var(--kk-green); font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900;
+        font-size: 0.95rem; letter-spacing: 1.5px; margin-bottom: 25px; text-transform: uppercase; 
+    }
+    #kk-lp-wrapper .rs-text-col p { 
+        margin-bottom: 35px; font-size: 1.15rem; max-width: 450px; opacity: 0.9;
+    }
+    #kk-lp-wrapper .rs-mid-col {
+        flex: 0 0 280px; display: flex; flex-direction: column; justify-content: center;
+        padding: 60px 4vw 60px 1vw;
+    }
+    #kk-lp-wrapper .rs-mid-item {
+        display: flex; align-items: center; gap: 18px; padding: 22px 0;
+        border-bottom: 1px solid rgba(74,32,18,0.15); transition: 0.3s ease;
+        cursor: default;
+    }
+    #kk-lp-wrapper .rs-mid-item:hover { transform: translateX(10px); border-color: rgba(74,32,18,0.3); }
+    #kk-lp-wrapper .rs-mid-item:last-child { border-bottom: none; }
+    #kk-lp-wrapper .rs-mid-icon {
+        width: 45px; height: 45px; border-radius: 50%; border: 1px solid rgba(74,32,18,0.2);
+        display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: rgba(255,255,255,0.5);
+        transition: 0.3s ease;
+    }
+    #kk-lp-wrapper .rs-mid-item:hover .rs-mid-icon { background: var(--kk-white); box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+    #kk-lp-wrapper .rs-mid-icon svg { width: 22px; height: 22px; fill: none; stroke: var(--kk-chocolate); stroke-width: 1.5; transition: 0.3s;}
+    #kk-lp-wrapper .rs-mid-item:hover .rs-mid-icon svg { stroke: var(--kk-red); transform: scale(1.1); }
+    #kk-lp-wrapper .rs-mid-item span {
+        font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 1rem; color: var(--kk-chocolate); letter-spacing: 0.5px; transition: 0.3s;
+    }
+    #kk-lp-wrapper .rs-image-col { 
+        flex: 1.5; background: url('../assets/media/KKJustChocoalteIcedGlazed.jpg') no-repeat center center; 
+        background-size: cover; border-radius: 20px 0 0 20px; margin: 25px 0; box-shadow: -10px 0 30px rgba(0,0,0,0.08);
+        transform-origin: center right;
+    }
+
+    /* --- MASTERS SECTION --- */
+    #kk-lp-wrapper .masters-lto { display: flex; align-items: center; justify-content: center; gap: 70px; padding: 100px 6vw; background: var(--kk-white); perspective: 1000px; margin-top: 40px;}
+    #kk-lp-wrapper .masters-image-col { position: relative; width: 45%; max-width: 550px; display: flex; justify-content: center; align-items: center; }
+    #kk-lp-wrapper .masters-image-col .mesh-bg { width: 100%; position: absolute; z-index: 1; }
+    #kk-lp-wrapper .masters-image-col .box-img { width: 85%; position: relative; z-index: 2; filter: drop-shadow(0 25px 40px rgba(0,0,0,0.15)); transform: rotate(-3deg); }
+    #kk-lp-wrapper .badge-bestseller {
+        position: absolute; top: -15px; left: -15px; width: 100px; height: 100px;
+        background: var(--kk-red); color: white; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center; text-align: center;
+        font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 1rem; line-height: 1.1;
+        letter-spacing: 1px; box-shadow: 0 10px 20px rgba(200,16,46,0.3); z-index: 5;
+    }
+    #kk-lp-wrapper .masters-text-col { width: 45%; max-width: 500px; }
+    #kk-lp-wrapper .masters-text-col h2 { font-size: clamp(2.8rem, 4vw, 4rem); margin-bottom: 20px; line-height: 1.05; }
+    #kk-lp-wrapper .masters-text-col p { font-size: 1.2rem; margin-bottom: 30px; }
+    #kk-lp-wrapper .action-buttons { display: flex; gap: 15px; width: 100%; }
+    #kk-lp-wrapper .action-buttons a { flex: 1; text-align: center; }
+
+    /* --- ABOUT SECTION WITH ROTATING STAMP --- */
+    #kk-lp-wrapper .about-section { 
+        display: flex; align-items: center; justify-content: center; gap: 70px; 
+        padding: 100px 6vw; background: var(--kk-white); 
+    }
+    #kk-lp-wrapper .stamp-container { width: 200px; height: 200px; flex-shrink: 0; }
+    #kk-lp-wrapper .about-stamp { 
+        width: 100%; height: 100%; 
+        animation: spin-stamp 15s linear infinite; 
+        transform-origin: center;
+    }
+    @keyframes spin-stamp { 100% { transform: rotate(360deg); } }
+    
+    #kk-lp-wrapper .about-right { max-width: 800px; }
+    #kk-lp-wrapper .about-subtitle { color: var(--kk-red); font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; display: block; }
+    #kk-lp-wrapper .about-right h2 { font-size: clamp(2.4rem, 3.5vw, 3.2rem); color: var(--kk-green); margin-bottom: 20px; line-height: 1.1; letter-spacing:-0.5px;}
+    #kk-lp-wrapper .about-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; }
+    #kk-lp-wrapper .about-row p { max-width: 550px; font-size: 1.25rem; }
+
+    /* --- ANATOMY SECTION (Image 1 Section) --- */
+    #kk-lp-wrapper .anatomy-section {
+        background: var(--kk-dark); padding: 100px 6vw;
+        display: flex; align-items: center; justify-content: center; gap: 50px;
+        color: var(--kk-white); position: relative; overflow: hidden;
+    }
+    #kk-lp-wrapper .anatomy-bg-glow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        width: 600px; height: 600px; background: radial-gradient(circle, rgba(74,32,18,0.6) 0%, rgba(35,17,11,0) 70%); z-index: 0;
+    }
+    #kk-lp-wrapper .anatomy-col { display: flex; flex-direction: column; gap: 80px; flex: 1; z-index: 2; }
+    #kk-lp-wrapper .anatomy-col.left { align-items: flex-end; text-align: right; }
+    #kk-lp-wrapper .anatomy-col.right { align-items: flex-start; text-align: left; }
+    
+    #kk-lp-wrapper .anatomy-item { display: flex; align-items: center; gap: 20px; max-width: 320px; transition: 0.4s; cursor: default;}
+    #kk-lp-wrapper .anatomy-item:hover { transform: scale(1.05); }
+    #kk-lp-wrapper .anatomy-col.left .anatomy-item { flex-direction: row-reverse; }
+    
+    #kk-lp-wrapper .a-icon { width: 55px; height: 55px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: rgba(255,255,255,0.05); transition: 0.4s; }
+    #kk-lp-wrapper .anatomy-item:hover .a-icon { background: rgba(255,255,255,0.15); border-color: var(--kk-white); box-shadow: 0 0 20px rgba(255,255,255,0.2); }
+    #kk-lp-wrapper .a-icon svg { width: 24px; height: 24px; fill: none; stroke: var(--kk-white); stroke-width: 1.5; }
+    #kk-lp-wrapper .a-text h4 { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: var(--kk-white); font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 8px 0; }
+    #kk-lp-wrapper .a-text p { color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.4; margin: 0; }
+    #kk-lp-wrapper .anatomy-center-img { flex: 1.2; text-align: center; position: relative; z-index: 3; }
+    @keyframes slowRotate {
+        100% { transform: rotate(360deg); }
+    }
+    #kk-lp-wrapper .anatomy-center-img img { 
+        width: 100%; max-width: 450px; 
+        filter: drop-shadow(0 30px 40px rgba(0,0,0,0.8)); 
+        animation: slowRotate 30s linear infinite;
+    }
+
+    /* --- THE LINEUP SLIDER --- */
+    #kk-lp-wrapper .menu-section { padding: 100px 6vw; background: var(--kk-cream); text-align: center; }
+    #kk-lp-wrapper .menu-header { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 60px; }
+    #kk-lp-wrapper .menu-header::before, #kk-lp-wrapper .menu-header::after { 
+        content: ''; display: block; width: 40px; height: 4px; 
+        background-image: radial-gradient(circle, var(--kk-green) 2.5px, transparent 2.5px); 
+        background-size: 10px 10px; background-position: center;
+    }
+    #kk-lp-wrapper .menu-header h2 { font-size: 3rem; }
+
+    #kk-lp-wrapper .menu-section-inner { position: relative; max-width: 1200px; margin: 0 auto; }
+    #kk-lp-wrapper .menu-slider-container { width: 100%; overflow: hidden; padding: 10px 0; }
+    #kk-lp-wrapper .menu-track { display: flex; gap: 25px; width: 100%; touch-action: pan-y; } /* allows vertical scroll while swiping */
+    
+    #kk-lp-wrapper .menu-card { 
+        flex: 0 0 calc(25% - 18.75px); /* 4 visible */
+        background: var(--kk-white); border-radius: 12px; overflow: hidden; 
+        border: 2px solid transparent; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1); cursor: pointer; display: flex; flex-direction: column; text-align: left;
+    }
+    #kk-lp-wrapper .menu-card:hover { border-color: var(--kk-green); box-shadow: 0 15px 30px rgba(0,0,0,0.12); transform: translateY(-8px); }
+    #kk-lp-wrapper .menu-img-wrap { height: 220px; overflow: hidden; position: relative; width: 100%; }
+    #kk-lp-wrapper .menu-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s cubic-bezier(0.25, 1, 0.5, 1); }
+    #kk-lp-wrapper .menu-card:hover img { transform: scale(1.08) rotate(1deg); }
+    #kk-lp-wrapper .menu-content { padding: 25px 20px; display: flex; flex-direction: column; flex: 1; background: var(--kk-white); transition: 0.4s; }
+    #kk-lp-wrapper .menu-content h3 { font-family: 'Gelica SemiBold', serif; font-size: 1.4rem; color: var(--kk-chocolate); margin-bottom: 12px; }
+    #kk-lp-wrapper .menu-content p { font-family: 'Brandon Grotesque Regular', sans-serif; font-size: 1.05rem; line-height: 1.5; color: rgba(56, 26, 16, 0.85); margin-bottom: 25px; flex: 1; }
+    #kk-lp-wrapper .menu-content .btn-solid-red { font-size: 0.85rem; padding: 12px; width: 100%; border-radius: 6px; text-align: center; }
+
+    #kk-lp-wrapper .slider-controls { display: block; margin-top: 0; }
+    #kk-lp-wrapper .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; width: 50px; height: 50px; border-radius: 50%; background: var(--kk-white); border: 2px solid rgba(74,32,18,0.2); color: var(--kk-chocolate); font-size: 1.5rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    #kk-lp-wrapper .slider-btn.prev { left: -25px; }
+    #kk-lp-wrapper .slider-btn.next { right: -25px; }
+    #kk-lp-wrapper .slider-btn:hover { background: var(--kk-green); color: var(--kk-white); border-color: var(--kk-green); }
+
+    /* --- CORPORATE SECTION REDESIGN --- */
+    #kk-lp-wrapper .corp-section { background: linear-gradient(90deg, rgb(43, 18, 10) 0%, rgb(74, 33, 17) 50%, rgb(43, 18, 10) 100%); padding: 80px 6vw; display: flex; flex-direction: column; gap: 50px; position: relative; overflow: hidden; color: var(--kk-white); }
+    #kk-lp-wrapper .corp-pattern { position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.05) 2px, transparent 2px); background-size: 30px 30px; opacity: 0.8; z-index: 0; }
+    
+    #kk-lp-wrapper .corp-top { display: flex; align-items: center; justify-content: space-between; gap: 50px; position: relative; z-index: 2; }
+    #kk-lp-wrapper .corp-text { width: 45%; }
+    #kk-lp-wrapper .corp-tag { color: var(--kk-red); font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; display: block; }
+    #kk-lp-wrapper .corp-text h2 { color: var(--kk-white); font-size: clamp(2.8rem, 4vw, 4rem); line-height: 1.1; margin-bottom: 25px; letter-spacing: -1px; }
+    #kk-lp-wrapper .corp-text p { color: rgba(255,255,255,0.85); font-size: 1.15rem; line-height: 1.6; margin-bottom: 35px; }
+    
+    #kk-lp-wrapper .corp-img { width: 55%; text-align: right; }
+    #kk-lp-wrapper .corp-img img { width: 100%; max-width: 650px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6)); }
+
+    #kk-lp-wrapper .corp-bottom { 
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; 
+        background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); 
+        border-radius: 16px; padding: 40px 30px; position: relative; z-index: 2;
+    }
+    #kk-lp-wrapper .c-feat-new { text-align: center; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 10px; }
+    #kk-lp-wrapper .c-feat-new:not(:last-child)::after { content: ''; position: absolute; right: -10px; top: 10%; height: 80%; width: 1px; background: rgba(255,255,255,0.1); }
+    #kk-lp-wrapper .c-icon { width: 50px; height: 50px; border: 1px solid var(--kk-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; background: rgba(200,16,46,0.05); transition: 0.3s;}
+    #kk-lp-wrapper .c-feat-new:hover .c-icon { background: var(--kk-red); box-shadow: 0 5px 15px rgba(200,16,46,0.3); }
+    #kk-lp-wrapper .c-icon svg { width: 24px; height: 24px; fill: none; stroke: var(--kk-red); stroke-width: 1.5; transition: 0.3s; }
+    #kk-lp-wrapper .c-feat-new:hover .c-icon svg { stroke: var(--kk-white); }
+    #kk-lp-wrapper .c-feat-new h4 { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: white; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    #kk-lp-wrapper .c-feat-new p { color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.5; margin: 0; }
+
+    /* --- THEATRE SECTION / HOT LIGHT BANNER --- */
+    #kk-lp-wrapper .hot-light-section {
+        display: flex;
+        width: 100%;
+        background: #fdfdfd; 
+        overflow: hidden;
+        position: relative;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    #kk-lp-wrapper .hl-left {
+        width: 45%;
+        background: var(--kk-red);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 4vw;
+    }
+    #kk-lp-wrapper .hl-left::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -50px;
+        width: 100px;
+        height: 100%;
+        background: var(--kk-red);
+        transform: skewX(-15deg);
+        z-index: 1;
+    }
+    #kk-lp-wrapper .hl-left-content {
+        position: relative; z-index: 2; text-align: center; width: 100%;
+    }
+    #kk-lp-wrapper .hl-left-content img { 
+        width: 100%; max-width: 450px; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+    }
+    
+    #kk-lp-wrapper .hl-right {
+        width: 55%;
+        padding: 80px 5vw 80px 8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f6f4f2;
+        background-image: radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+        background-size: 15px 15px;
+        z-index: 2;
+    }
+    #kk-lp-wrapper .hl-right h3 {
+        font-family: 'Gelica SemiBold', serif; font-size: 2.2rem; color: var(--kk-green); margin-bottom: 5px;
+    }
+    #kk-lp-wrapper .hl-right h2 {
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: clamp(3rem, 4vw, 5rem); color: var(--kk-red); text-transform: uppercase; line-height: 1; margin-bottom: 20px; letter-spacing: -1px;
+    }
+    #kk-lp-wrapper .hl-right p {
+        font-family: 'Brandon Grotesque Regular', sans-serif; font-size: 1.15rem; color: var(--kk-chocolate); margin-bottom: 40px; line-height: 1.5; max-width: 500px;
+    }
+    #kk-lp-wrapper .hl-times {
+        display: flex; gap: 40px; margin-bottom: 30px; flex-wrap: wrap; width: 100%;
+    }
+    #kk-lp-wrapper .hl-time-block {
+        border-left: 3px solid var(--kk-gold); padding-left: 18px; width: 100%;
+    }
+    #kk-lp-wrapper .hl-time-block h4 {
+        font-family: 'Brandon Grotesque Black', sans-serif; font-size: 2rem; color: var(--kk-gold); margin: 0 0 5px 0; line-height: 1.2;
+    }
+    #kk-lp-wrapper .hl-time-block span {
+        font-size: 1.25rem; font-weight: 900; color: var(--kk-green); font-family: 'Brandon Grotesque Black', sans-serif; text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 5px;
+    }
+
+    /* --- INSTAGRAM FEED --- */
+    #kk-lp-wrapper .feed-section { padding: 80px 6vw; background: var(--kk-white); }
+    #kk-lp-wrapper .feed-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+    #kk-lp-wrapper .feed-title-wrap { display: flex; align-items: flex-start; gap: 15px; }
+    #kk-lp-wrapper .feed-title-wrap svg.camera { animation: bounce 2s infinite; display: inline-block;}
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    #kk-lp-wrapper .feed-title-text h2 { font-size: 2.5rem; margin: 0 0 5px 0; letter-spacing: -0.5px; }
+    #kk-lp-wrapper .feed-title-text p { margin: 0; font-size: 1.1rem; color: #666; max-width: 500px; }
+    #kk-lp-wrapper .feed-title-text a { color: var(--kk-red); text-decoration: none; font-weight: 600; }
+    
+    #kk-lp-wrapper .feed-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; }
+    #kk-lp-wrapper .feed-grid img { width: 100%; display: block; }
+    #kk-lp-wrapper .feed-item { border-radius: 12px; overflow: hidden; aspect-ratio: 1; position: relative; background: #331; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);}
+    #kk-lp-wrapper .feed-item:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 15px 30px rgba(0,0,0,0.15); z-index: 2; }
+    #kk-lp-wrapper .feed-item.brown-1 { background: radial-gradient(circle, #6b3310 0%, #2b1104 100%); }
+    #kk-lp-wrapper .feed-item.brown-2 { background: radial-gradient(circle, #4a210d 0%, #1a0a02 100%); }
+    #kk-lp-wrapper .feed-item.tan-1 { background: radial-gradient(circle, #b88656 0%, #875c2e 100%); }
+    #kk-lp-wrapper .feed-item.red-1 { background: radial-gradient(circle, #5e1c1e 0%, #2b0c0d 100%); }
+    #kk-lp-wrapper .feed-item.dark-1 { background: radial-gradient(circle, #2a110a 0%, #0d0402 100%); }
+    #kk-lp-wrapper .feed-item.black-promo { background: #0b0705; color: white; flex-direction: column; text-align: center; border: 1px solid rgba(255,255,255,0.1);}
+    #kk-lp-wrapper .feed-item.black-promo h3 { font-family: 'Brandon Grotesque Black', sans-serif; font-size: 3rem; color: white; margin: 0; line-height: 1; }
+    #kk-lp-wrapper .feed-item.black-promo p { font-family: 'Brandon Grotesque Regular', sans-serif; font-weight: bold; font-size: 0.8rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; margin: 5px 0 0 0; }
+
+    /* --- FEATURES STRIP --- */
+    #kk-lp-wrapper .features-strip { 
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; 
+        padding: 70px 6vw; background: var(--kk-cream); border-top: 1px solid rgba(0,0,0,0.05); text-align: center;
+    }
+    #kk-lp-wrapper .s-feat { display: flex; flex-direction: column; align-items: center; padding: 0 15px; cursor: default; transition: 0.4s;}
+    #kk-lp-wrapper .s-feat:hover { transform: translateY(-5px); }
+    #kk-lp-wrapper .feat-icon-circle { 
+        width: 80px; height: 80px; border-radius: 50%; background: var(--kk-white); 
+        display: flex; align-items: center; justify-content: center; 
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06); margin-bottom: 25px; border: none; transition: 0.4s;
+    }
+    #kk-lp-wrapper .s-feat:hover .feat-icon-circle { box-shadow: 0 12px 30px rgba(0,0,0,0.1); transform: scale(1.05); }
+    #kk-lp-wrapper .feat-icon-circle span { font-size: 2.2rem; }
+    #kk-lp-wrapper .s-text h4 { font-family: 'Gelica SemiBold', serif; font-size: 1.3rem; color: var(--kk-chocolate); margin: 0 0 12px 0; }
+    #kk-lp-wrapper .s-text p { font-size: 1.1rem; font-family: 'Brandon Grotesque Regular', sans-serif; color: rgba(74,32,18,0.75); margin: 0; }
+
+    /* --- FAQ SECTION --- */
+    #kk-lp-wrapper .faq-section { 
+        display: flex; justify-content: space-between; align-items: flex-start; padding: 100px 6vw; background: var(--kk-white); gap: 60px;
+    }
+    #kk-lp-wrapper .faq-left { width: 35%; }
+    #kk-lp-wrapper .faq-left h2 { font-size: 4.5rem; line-height: 1.05; letter-spacing: -1px; }
+    #kk-lp-wrapper .faq-left .red-text { color: var(--kk-red); }
+    
+    #kk-lp-wrapper .faq-right { width: 65%; display: flex; flex-direction: column; }
+    #kk-lp-wrapper details.faq-item { border-bottom: 1px solid rgba(0,0,0,0.15); padding: 25px 0; transition: 0.3s; }
+    #kk-lp-wrapper details.faq-item:hover { background: rgba(0,0,0,0.01); padding-left: 10px; padding-right: 10px; }
+    #kk-lp-wrapper details.faq-item summary {
+        font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 1.2rem; color: var(--kk-chocolate);
+        cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;
+    }
+    #kk-lp-wrapper details.faq-item summary::-webkit-details-marker { display: none; }
+    #kk-lp-wrapper details.faq-item summary::after {
+        content: '+'; font-size: 1.5rem; font-weight: 400; width: 32px; height: 32px; 
+        border: 2px solid var(--kk-chocolate); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    #kk-lp-wrapper details.faq-item[open] summary::after { content: '−'; color: var(--kk-red); border-color: var(--kk-red); transform: rotate(180deg); }
+    #kk-lp-wrapper details.faq-item summary:hover { color: var(--kk-red); }
+    #kk-lp-wrapper details.faq-item summary:hover::after { border-color: var(--kk-red); }
+    #kk-lp-wrapper .faq-answer { padding-top: 20px; font-size: 1.1rem; color: rgba(74,32,18,0.85); line-height: 1.6; }
+    
+    #kk-lp-wrapper .faq-btn-wrap { text-align: right; margin-top: 40px; }
+
+    /* --- PREMIUM FOOTER --- */
+    #kk-lp-wrapper .site-footer { 
+        background: var(--kk-green); color: var(--kk-white); padding: 80px 6vw 40px; 
+        display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px;
+    }
+    #kk-lp-wrapper .f-brand { display: flex; flex-direction: column; gap: 20px; }
+    #kk-lp-wrapper .f-brand img { height: 75px; width: fit-content; transition: 0.3s; opacity: 0.9;}
+    #kk-lp-wrapper .f-brand img:hover { transform: scale(1.05); opacity: 1; }
+    #kk-lp-wrapper .f-brand p { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; line-height: 1.6; color: rgba(255,255,255,0.7); max-width: 300px; }
+    
+    #kk-lp-wrapper .f-col { display: flex; flex-direction: column; gap: 15px; }
+    #kk-lp-wrapper .f-col h4 { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: var(--kk-dough); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px; }
+    #kk-lp-wrapper .f-col a { font-family: 'Brandon Grotesque Black', sans-serif; font-weight: 900; color: white; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; position: relative; width: fit-content; opacity: 0.85; }
+    #kk-lp-wrapper .f-col a::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0; background: var(--kk-white); transition: 0.3s; }
+    #kk-lp-wrapper .f-col a:hover { color: var(--kk-white); opacity: 1; }
+    #kk-lp-wrapper .f-col a:hover::after { width: 100%; }
+    
+    #kk-lp-wrapper .f-social { display: flex; gap: 20px; align-items: center; margin-top: 10px; }
+    #kk-lp-wrapper .f-social a { opacity: 0.8; transition: 0.3s; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; }
+    #kk-lp-wrapper .f-social a:hover { opacity: 1; border-color: var(--kk-white); transform: translateY(-3px); background: rgba(255,255,255,0.1); }
+    #kk-lp-wrapper .f-social svg { width: 20px; height: 20px; fill: none; stroke: white; stroke-width: 1.5; }
+    
+    #kk-lp-wrapper .footer-bottom { grid-column: 1 / -1; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.9rem; color: rgba(255,255,255,0.5); font-family: 'Brandon Grotesque Regular', sans-serif;}
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 1024px) {
+        #kk-lp-wrapper .nav-links { display: none; }
+        #kk-lp-wrapper .slider-btn.prev { left: 5px; }
+        #kk-lp-wrapper .slider-btn.next { right: 5px; }
+        
+        #kk-lp-wrapper .masters-lto, #kk-lp-wrapper .about-section { flex-direction: column; text-align: center; padding: 60px 6vw; }
+        #kk-lp-wrapper .masters-image-col, #kk-lp-wrapper .masters-text-col, #kk-lp-wrapper .about-right { width: 100%; }
+        #kk-lp-wrapper .action-buttons { flex-direction: column; }
+        #kk-lp-wrapper .about-row { justify-content: center; }
+        #kk-lp-wrapper .about-row { flex-direction: column; align-items: center; gap: 25px;}
+        
+        #kk-lp-wrapper .rich-soft-section { flex-direction: column; padding-left: 0; }
+        #kk-lp-wrapper .rs-text-col { text-align: center; padding: 60px 6vw; align-items: center; }
+        #kk-lp-wrapper .rs-mid-col { padding: 0 6vw 60px; }
+        #kk-lp-wrapper .rs-image-col { min-height: 400px; border-radius: 0; margin: 0;}
+        
+        #kk-lp-wrapper .anatomy-section { flex-direction: column; padding: 60px 6vw; gap: 40px;}
+        #kk-lp-wrapper .anatomy-col.left, #kk-lp-wrapper .anatomy-col.right { align-items: center; text-align: center; gap: 30px; }
+        #kk-lp-wrapper .anatomy-col.left .anatomy-item, #kk-lp-wrapper .anatomy-item { flex-direction: column; }
+        
+        #kk-lp-wrapper .menu-card { flex: 0 0 calc(50% - 12.5px); }
+        
+        #kk-lp-wrapper .corp-top { flex-direction: column; text-align: center; }
+        #kk-lp-wrapper .corp-text, #kk-lp-wrapper .corp-img { width: 100%; text-align: center; }
+        #kk-lp-wrapper .c-feat-new:not(:last-child)::after { display: none; }
+        
+        #kk-lp-wrapper .hot-light-section { flex-direction: column; }
+        #kk-lp-wrapper .hl-left { width: 100%; padding: 40px 6vw; }
+        #kk-lp-wrapper .hl-left::after { display: none; }
+        #kk-lp-wrapper .hl-right { width: 100%; padding: 60px 6vw; text-align: center; align-items: center; }
+        #kk-lp-wrapper .hl-times { justify-content: center; }
+        #kk-lp-wrapper .hl-time-block { border-left: none; border-bottom: 3px solid var(--kk-gold); padding: 0 0 15px 0; }
+        
+        #kk-lp-wrapper .feed-grid { grid-template-columns: repeat(2, 1fr); }
+        #kk-lp-wrapper .feed-top { flex-direction: column; gap: 20px; align-items: flex-start; }
+        
+        #kk-lp-wrapper .features-strip { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+        #kk-lp-wrapper .faq-section { flex-direction: column; padding: 60px 6vw;}
+        #kk-lp-wrapper .faq-left, #kk-lp-wrapper .faq-right { width: 100%; }
+        
+        #kk-lp-wrapper .site-footer { grid-template-columns: 1fr 1fr; text-align: center; gap: 40px; }
+        #kk-lp-wrapper .f-brand, #kk-lp-wrapper .f-col { align-items: center; }
+        #kk-lp-wrapper .footer-bottom { margin-top: 20px; }
+    }
+    @media (max-width: 600px) {
+        #kk-lp-wrapper .hero-circles-container {
+            bottom: -50px;
+            gap: 15px;
+        }
+        #kk-lp-wrapper .hero-circle {
+            width: 90px; height: 90px; font-size: 0.7rem; border-width: 3px; padding: 5px;
+        }
+        #kk-lp-wrapper .hero-circle svg { width: 26px; height: 26px; margin-bottom: 5px; }
+
+        #kk-lp-wrapper .menu-card { flex: 0 0 100%; }
+        #kk-lp-wrapper .features-strip { grid-template-columns: 1fr; }
+        #kk-lp-wrapper .site-footer { grid-template-columns: 1fr; }
+    }
+    body.kk-locked { overflow: hidden !important; }
+    
+    #kk-lp-wrapper .btn-solid-red { MARGIN-BOTTOM: 0; }
+    #kk-lp-wrapper .features-strip { DISPLAY: NONE; }
+    #kk-lp-wrapper .footer-bottom P { COLOR: #fff; }
+      
+      #kk-lp-wrapper nav {
+    background: #fff;
+}
+#kk-lp-wrapper .nav-link {
+    color: #166936 !important;
+}
+#kk-lp-wrapper .running-strip {
+    background-color: #166936;
+}
+#kk-lp-wrapper .menu-header h2 {
+    color: #166936;
+}
+#kk-lp-wrapper .menu-header h2 span {
+    color: #c8102e;
+}
+section.masters-lto {
+    background: url(../assets/media/bgeandbrown.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+img.mesh-bg {
+    filter: brightness(1) contrast(.3) grayscale(1);
+}
+#kk-lp-wrapper .masters-text-col h2 {
+    color: #fff;
+}
+#kk-lp-wrapper .masters-text-col p {
+    color: #fff;
+}
+.masters-text-col .btn-outline.dark {
+    background: #fff !important;
+    color: #000 !important;
+    border-color: #c8102e !important;
+}
+           section#corporate {
+    background: url(../assets/media/345643432423.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+      #kk-lp-wrapper .corp-text h2 {
+    color: #333;
+}
+      #kk-lp-wrapper .corp-text p {
+    color: #333;
+}
+      #kk-lp-wrapper .corp-bottom {  
+    background: rgb(22 105 54);
+    border: 2px solid rgb(16 72 38 / 41%);
+      }
+        #kk-lp-wrapper .c-icon svg {   
+    stroke: #ffffff;
+      }
+      #kk-lp-wrapper .c-icon {    
+    border: 1px solid #ffffff;
+      }
+      
+      #kk-lp-wrapper .hero-circle {  
+    border: 3px solid #c8102e !important; 
+    color: #c8102e !important;
+      }
+      #kk-lp-wrapper .hero-circle:hover {    
+    background: #c8102e !important;
+    color: var(--kk-white) !important;
+}
+        background: url(../assets/media/bgeandbrown.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+  img.mesh-bg {
+    filter: brightness(0) contrast(0.3) grayscale(0) !important;
+}
+  #kk-lp-wrapper .masters-text-col h2,
+  #kk-lp-wrapper .masters-text-col p{
+    color: #333 !important;
+}
+  body.inner-page .running-strip {
+  display: none;
+}
+
+body.inner-page #kk-lp-wrapper nav {
+  top: 0px;
+}
+  #kk-lp-menu-wrapper .cat-nav-item:nth-child(4) {
+    border-right: none !important;
+}
+#kk-lp-menu-wrapper .cat-nav-item:last-child {
+    display: none !important;
+}
+</style>
+<script>
+  // Check if the current URL is NOT the homepage
+  if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+    // Instantly hide the loader and show the wrapper using injected CSS
+    var style = document.createElement('style');
+    style.innerHTML = '#kk-preloader { display: none !important; } #kk-lp-wrapper { opacity: 1 !important; transform: none !important; }';
+    document.head.appendChild(style);
+  }
+</script>
+<div id="kk-preloader">
+<div class="loader-content"><img alt="Loading Doughnut" class="loader-donut" src="../assets/media/kk_donut-23423-1-load.png" />
+<div class="loader-counter">0%</div>
+
+<div class="loader-text">Heating the Glaze...</div>
+</div>
+</div>
+
+<div id="kk-lp-wrapper">
+<div class="running-strip">
+    <div class="marquee-track">
+        <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+        <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+       <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+       <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+    </div>
+    <div class="marquee-track" aria-hidden="true">
+         <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+       <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+       <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+       <span>Make it a box of dozen with Buy 8 and Get 4 Free!</span>
+    </div>
+</div>
+
+<nav id="navbar">
+<div class="nav-logo"><a href="../"><img alt="Krispy Kreme" src="../assets/img/logos/original/1538203844_KKNEWLogo.png" /></a></div>
+
+<div class="nav-links"><a class="nav-link" href="../menu/">Menu</a> <a class="nav-link" href="../stores/">Stores</a> <a class="nav-link" href="../our-story/">About Us</a> <a class="nav-link" href="../corporate/">Corporate Orders</a></div>
+<a class="btn-solid-red" href="#" onclick="openOrderModal(event)">Order Online →</a></nav>
+  
+  <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const isHomepage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+
+  if (!isHomepage) {
+    // Hide running strip on inner pages
+    const runningStrip = document.querySelector('.running-strip');
+    if (runningStrip) runningStrip.style.display = 'none';
+
+    // Set top: 0px for nav on inner pages
+    const nav = document.querySelector('#kk-lp-wrapper nav');
+    if (nav) nav.style.top = '0px';
+  }
+});
+  </script><script>
+                        var site_root_path = '/';
+                        var ajax_root_path = '../include/ajax/';
+                    </script>
+                            <meta name="description" content="   "/><meta property="og:description" content="   "/><meta name="keywords" content="   "/><link rel="canonical" href="../store/" /><meta property="og:url" content="../store/"/><title>krispy Kreme Revamp, ,  | Store</title><meta property="og:title" content="krispy Kreme Revamp, ,  | Store"/><meta property="og:image" content=""/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="generator" content="" /><meta name="device" content="computer" />
+	</head>
+	<body>
+		<section id="outer-wrapper">
+			<div id="bg-overlay" style="background-color:; opacity:;"></div>
+			<header id="header">
+				<nav id="mobile-nav"></nav>
+				<nav id="main-nav">
+					<ul class="main-nav-list nav-list">
+					
+													<li class="nav-list-item nav-item-1  order-online">
+									<a class="summer-color-b summer-fontsize-b" href="../order-online/">Order Online</a>
+								</li>
+																<li class="nav-list-item nav-item-2  locate-us">
+									<a class="summer-color-b summer-fontsize-b" href="../locate-us/">Locate Us</a>
+								</li>
+																<li class="nav-list-item nav-item-3  home">
+									<a class="summer-color-b summer-fontsize-b" href="../">Home</a>
+								</li>
+																<li class="nav-list-item nav-item-4  about-us">
+									<a class="summer-color-b summer-fontsize-b" href="../about-us/">About Us</a>
+								</li>
+																<li class="nav-list-item nav-item-5  about-us">
+									<a class="summer-color-b summer-fontsize-b" href="../about-us/">About Us</a>
+								</li>
+																<li class="nav-list-item nav-item-6  our-story">
+									<a class="summer-color-b summer-fontsize-b" href="../our-story/">Our Story</a>
+								</li>
+																<li class="nav-list-item nav-item-7  store">
+									<a class="summer-color-b summer-fontsize-b" href="../store/">Store</a>
+								</li>
+																<li class="nav-list-item nav-item-8  menu">
+									<a class="summer-color-b summer-fontsize-b" href="../menu/">Menu</a>
+								</li>
+																<li class="nav-list-item nav-item-9  doughnuts">
+									<a class="summer-color-b summer-fontsize-b" href="../doughnuts/">Doughnuts</a>
+								</li>
+																<li class="nav-list-item nav-item-10  coffee">
+									<a class="summer-color-b summer-fontsize-b" href="../coffee/">Coffee</a>
+								</li>
+																<li class="nav-list-item nav-item-11  shakes">
+									<a class="summer-color-b summer-fontsize-b" href="../shakes/">Shakes</a>
+								</li>
+																<li class="nav-list-item nav-item-12  chillers">
+									<a class="summer-color-b summer-fontsize-b" href="../chillers/">Chillers</a>
+								</li>
+																<li class="nav-list-item nav-item-13  offer">
+									<a class="summer-color-b summer-fontsize-b" href="../offer/">Offer</a>
+								</li>
+																<li class="nav-list-item nav-item-14  test">
+									<a class="summer-color-b summer-fontsize-b" href="../test/">test</a>
+								</li>
+																<li class="nav-list-item nav-item-15  corporate">
+									<a class="summer-color-b summer-fontsize-b" href="../corporate/">Corporate</a>
+								</li>
+														
+						
+					</ul>
+				</nav>
+			</header>
+			<main id="inner-wrapper">
+				<div id="title-area" class="show">
+								  	<p class="site-tagline summer-color-c"></p> 				  	
+				</div>
+		
+<section id="main-content">
+					<div class="main-content-overlay" style="background-color:; opacity:;"></div>
+					<div id="main-content-wrapper">
+						<!-- <script>
+	$(document).ready(function(){
+		// var x=$(document).height();$('body').css('height',x);
+		var y=$(window).height();$('#outer-wrapper').css('min-height',y);
+	});
+	</script>
+ -->
+
+        <script type="text/javascript">
+    $(document).ready(function() {
+
+    var ic;
+    var total_offers = $(".main-offer-detail").length;
+    function fadeoffers(){
+        var reference_offer = "#offer_" + ic;
+        setTimeout(function(){
+            $(reference_offer).addClass("hidden");
+            $(reference_offer).next().addClass("fadeIn").removeClass("hidden");
+            if(ic < total_offers){
+                ic++;
+                fadeoffers();
+            }
+            else{
+                ic = 1;
+                offerslider("#offer_");
+            }
+            
+        },4000)
+    }
+    function offerslider(startingoffer){
+        ic = 1;
+        $(startingoffer + ic).removeClass("hidden").addClass("fadeIn");
+        fadeoffers();
+    }
+    offerslider("#offer_");
+
+    });
+</script>
+
+
+
+
+
+		 
+                   
+											 
+							
+								<section id="store" class="bg_color_f">
+
+
+									<div class="page-content row">
+<!--										<div class="about-head page-head">
+											<h3 class="">Store</h3>
+										</div>-->
+										<div class="about-content">
+											<div class=""><style type="text/css">/* Base Reset & Variables */
+        :root {
+            --kk-green: #006338;
+            --kk-red: #da291c;
+            --kk-bg-light: #fdf8f2;
+            --kk-text-dark: #333333;
+            --kk-text-gray: #666666;
+            --font-main: 'Montserrat', sans-serif;
+            --font-heading: 'Quicksand', sans-serif;
+            --font-script: 'Caveat', cursive;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-main);
+            color: var(--kk-text-dark);
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .kk-hero {
+            background-color: var(--kk-bg-light);
+            background-image: url('../assets/media/KKstorepage.jpg');
+            background-size: cover;
+            background-position: center right;
+            padding: 80px 5% 100px 5%;
+            position: relative;
+        }
+        
+       
+
+        .kk-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+        }
+
+        .kk-hero h1 {
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .kk-hero-script {
+            font-family: var(--font-script);
+            color: var(--kk-green);
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .kk-hero-brand {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--kk-red);
+            font-size: 4rem;
+            font-weight: 800;
+            font-style: italic;
+            display: block;
+            margin: -5px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .kk-hero-sub {
+            margin-top: 20px;
+            color: var(--kk-text-dark);
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* Search Section */
+        .kk-search-wrapper {
+            max-width: 1200px;
+            margin: -35px auto 0 auto;
+            position: relative;
+            z-index: 10;
+            padding: 0 15px;
+        }
+
+        .kk-search-bar {
+            background: white;
+            border-radius: 20px; 
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            flex-wrap: wrap;
+        }
+
+        .kk-input-group {
+            position: relative;
+            flex: 1.5;
+            min-width: 200px;
+        }
+
+        .kk-input-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .kk-input, .kk-select {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px; 
+            font-family: var(--font-main);
+            font-size: 0.9rem;
+            color: var(--kk-text-dark);
+            outline: none;
+            background-color: white;
+            appearance: none;
+        }
+
+        .kk-select-wrapper {
+            flex: 1;
+            position: relative;
+            min-width: 160px;
+        }
+
+        .kk-select-wrapper::after {
+            content: '\f0d7';
+            font-family: 'FontAwesome';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--kk-green);
+            pointer-events: none;
+        }
+
+        .kk-btn-search {
+            background: var(--kk-green);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 15px; 
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s;
+            text-transform: uppercase;
+        }
+
+        .kk-btn-search:hover {
+            background: #004a29;
+        }
+
+        .kk-btn-geo {
+            background: white;
+            color: var(--kk-red);
+            border: 2px solid var(--kk-red);
+            padding: 12px 20px;
+            border-radius: 15px; 
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: 0.2s;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .kk-btn-geo:hover {
+            background: #fff0f0;
+        }
+
+        /* Results Header */
+        .kk-results-header {
+            max-width: 1200px;
+            margin: 40px auto 20px auto;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .kk-results-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--kk-green);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .kk-results-title span.count {
+            color: var(--kk-red);
+        }
+
+        /* Grid & Cards */
+        .kk-grid-wrapper {
+            display: block; 
+        }
+
+        .kk-grid {
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .kk-card {
+            background: white;
+            border: 1px solid #eaeaea;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .kk-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .kk-card-map {
+            height: 180px;
+            background-color: #f0f0f0;
+            position: relative;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .kk-card-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            pointer-events: none; /* Allows card click to trigger detail view */
+        }
+
+        .kk-open-maps {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: white;
+            color: #0056b3;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            z-index: 2;
+            pointer-events: auto; /* Allows external map link click */
+        }
+
+        .kk-distance-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--kk-green);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 2;
+        }
+
+        .kk-card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .kk-store-name {
+            font-family: var(--font-heading);
+            color: var(--kk-green);
+            font-size: 1.15rem;
+            margin: 0 0 12px 0;
+            line-height: 1.3;
+        }
+
+        .kk-store-address {
+            font-size: 0.85rem;
+            color: var(--kk-text-gray);
+            line-height: 1.5;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .kk-store-address i {
+            color: var(--kk-red);
+            font-size: 1.1rem;
+            margin-top: 2px;
+        }
+
+        .kk-store-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .kk-meta-item {
+            font-size: 0.8rem;
+            color: var(--kk-text-gray);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+        }
+
+        .kk-meta-item i {
+            color: var(--kk-green);
+            font-size: 0.9rem;
+            width: 14px;
+            text-align: center;
+        }
+
+        .kk-card-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .kk-btn-call, .kk-btn-dir {
+            flex: 1;
+            padding: 10px 8px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: 0.2s;
+            text-transform: uppercase;
+        }
+
+        .kk-btn-call {
+            background: white;
+            color: var(--kk-green);
+            border: 2px solid var(--kk-green);
+        }
+
+        .kk-btn-dir {
+            background: var(--kk-red);
+            color: white;
+            border: 2px solid var(--kk-red);
+        }
+
+        /* Promo Card */
+        .kk-promo-card {
+            background: var(--kk-green);
+            color: white;
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            cursor: default;
+        }
+
+        .kk-promo-title {
+            font-family: var(--font-script);
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+
+        .kk-promo-text {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            max-width: 80%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .kk-promo-pin {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: var(--kk-red);
+            font-size: 2.5rem;
+            z-index: 2;
+            opacity: 0.9;
+        }
+
+        .kk-promo-btn {
+            background: white;
+            color: var(--kk-green);
+            border: none;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: auto;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .kk-promo-img {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 446px;
+            opacity: 0.8;
+            z-index: 1;
+        }
+
+        /* Load More */
+        .kk-load-more-container {
+            text-align: center;
+            margin-bottom: 60px;
+            display: none; 
+        }
+        
+        .kk-load-more {
+            background: white;
+            border: 2px solid var(--kk-green);
+            color: var(--kk-green);
+            padding: 12px 35px;
+            border-radius: 25px;
+            font-family: var(--font-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+
+        .kk-load-more:hover {
+            background: var(--kk-green);
+            color: white;
+        }
+
+        /* Detailed Panel Styles */
+        .kk-detail-panel-wrapper {
+            display: none; 
+            max-width: 1200px;
+            margin: 0 auto 60px auto;
+            padding: 0 15px;
+            animation: fadeIn 0.3s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .kk-back-nav {
+            margin-bottom: 15px;
+        }
+
+        .kk-back-btn {
+            background: transparent;
+            border: none;
+            color: var(--kk-green);
+            font-family: var(--font-main);
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0;
+        }
+
+        .kk-detail-panel {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            border: 1px solid #eaeaea;
+        }
+
+        .kk-detail-map {
+            flex: 1;
+            min-height: 400px;
+            background: #e5e3df;
+        }
+
+        .kk-detail-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .kk-detail-info {
+            flex: 1;
+            padding: 40px 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .kk-detail-info .kk-store-name {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--kk-green);
+        }
+
+        .kk-detail-info .kk-store-address {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .kk-detail-extra-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+            background: #fdf8f2;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #fae8d4;
+        }
+
+        .kk-extra-box h4 {
+            margin: 0 0 10px 0;
+            font-family: var(--font-heading);
+            color: var(--kk-green);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+        
+        .kk-extra-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .kk-extra-box ul li {
+            font-size: 0.85rem;
+            color: var(--kk-text-dark);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .kk-extra-box ul li i {
+            color: var(--kk-red);
+            width: 16px;
+            text-align: center;
+        }
+
+        .kk-special-offer {
+            margin-bottom: 30px;
+            padding: 15px;
+            background: var(--kk-green);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            line-height: 1.4;
+        }
+        
+        .kk-special-offer i {
+            font-size: 1.3rem;
+            color: #ffd700;
+            flex-shrink: 0;
+        }
+
+        .kk-detail-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .kk-detail-actions .kk-btn-call, .kk-detail-actions .kk-btn-dir {
+            padding: 14px 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 992px) {
+            .kk-detail-panel {
+                flex-direction: column;
+            }
+            .kk-detail-map {
+                min-height: 300px;
+            }
+            .kk-detail-info {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .kk-hero {
+                padding: 40px 15px 80px 15px;
+                text-align: center;
+            }
+            .kk-search-bar {
+                flex-direction: column;
+                border-radius: 20px;
+                padding: 15px;
+            }
+            .kk-input-group, .kk-select-wrapper, .kk-btn-search, .kk-btn-geo {
+                width: 100%;
+            }
+            .kk-grid {
+                grid-template-columns: 1fr;
+            }
+            .kk-detail-extra-grid {
+                grid-template-columns: 1fr;
+            }
+            .kk-detail-actions {
+                flex-direction: column;
+            }
+            .kk-store-meta {
+                grid-template-columns: 1fr;
+            }
+        }
+</style>
+<section class="kk-hero">
+<div class="kk-hero-content">
+<h1><span class="kk-hero-script">Find a</span> <span class="kk-hero-brand">Krispy Kreme</span> <span class="kk-hero-script">near you!</span></h1>
+
+<p class="kk-hero-sub">Fresh doughnuts and great coffee<br />
+are always closer than you think.</p>
+</div>
+</section>
+
+<section class="kk-search-wrapper">
+<div class="kk-search-bar">
+<div class="kk-input-group"><input class="kk-input" id="kk-quick-search" placeholder="Search by Mall, Sector, or Street..." type="text" /></div>
+
+<div class="kk-select-wrapper"><select class="kk-select" id="kk-city-select"><option value="All">Select City</option> </select></div>
+
+<div class="kk-select-wrapper"><select class="kk-select" id="kk-outlet-select"><option value="All">Select Outlet</option> </select></div>
+<button class="kk-btn-search" id="kk-search-btn">Search</button><button class="kk-btn-geo" id="kk-geo-btn"><span id="kk-geo-btn-text">USE MY LOCATION</span></button></div>
+</section>
+
+<div class="kk-results-header">
+<h2 class="kk-results-title" id="kk-results-text"><span class="count">83</span> RESULTS <span style="color:var(--kk-green)">FOR &quot;ALL LOCATIONS&quot;</span></h2>
+</div>
+<!-- Store Grid View -->
+
+<div class="kk-grid-wrapper" id="kk-grid-view">
+<div class="kk-grid" id="kk-store-grid"><!-- Cards injected via JS --></div>
+
+<div class="kk-load-more-container" id="kk-load-more-btn-container"><button class="kk-load-more" id="kk-load-more-btn">LOAD MORE STORES</button></div>
+</div>
+<!-- Store Detail Panel View -->
+
+<div class="kk-detail-panel-wrapper" id="kk-detail-view">
+<div class="kk-back-nav"><button class="kk-back-btn" onclick="closeDetailedPanel()">Back to Store List</button></div>
+
+<div class="kk-detail-panel" id="kk-detail-content"><!-- Detailed content injected via JS --></div>
+</div>
+<script>
+let closeDetailedPanel;
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // All 83 Stores Array
+    let stores = [
+        {"n": "Krispy Kreme Doughnuts & Coffee | Sarjapura", "a": "Svs Tower, 230/5, First Floor, Muthanalur Cross, Sarjapur Main Road, Dommasandra, Bengaluru, Karnataka, 562125", "c": "Bengaluru", "l": "https://share.google/nkYQxJLgoOlcSJRTg", "p": "090354 77305"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Amanora Mall", "a": "East Block, Second Floor, Amanora Mall, Mundhwa Road, Hadapsar, Pune, Maharashtra, 411028", "c": "Pune", "l": "https://share.google/tdXyCfyFx6ku8UOs0", "p": "090968 12015"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Tribeca Highstreet", "a": "Shop Bearing No. P-25, Plaza Floor, NIBM Road, Tribeca Highstreet, Kondhwa, Pune, Maharashtra, 411060", "c": "Pune", "l": "https://share.google/YPKdmGMNLwyxRsVYu", "p": "090968 12015"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | M5 Mall", "a": "M5 Mall, 3rd floor, Veerasandra Industrial Area, Plot No- 1, Hosur Rd, Toll, Gate, Phase II, Electronic City, Bengaluru, Karnataka, 560100", "c": "Bengaluru", "l": "https://maps.app.goo.gl/KwAooiJPM3vA97EbA", "p": "081471 46372"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Alwarpet", "a": "No. 522, TT Krishnamachari Road, Cooperative Colony, Sri Ram Nagar, Alwarpet, Chennai, Tamil Nadu, 600018", "c": "Chennai", "l": "https://share.google/tXjvWf0eYl7W2VIAK", "p": "099406 77972"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Galleria Mall", "a": "Upper Ground Floor, RMZ Galleria Mall, Bangalore Bellary Road, Yelahanka Post, Yelahanka, Bengaluru, Karnataka, 560064", "c": "Bengaluru", "l": "https://maps.app.goo.gl/wUbpRw6h3wfngtqG9", "p": "097428 01691"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | IRIS Broadway", "a": "G-136, First floor, Block A, Iris Broadway, Sector 85, Gurugram, Haryana, 122004", "c": "Gurugram", "l": "https://maps.app.goo.gl/af849KmZrZ6j2NGA9", "p": "095083 42911"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Victoria Layout", "a": "Adarsh Opous, 3, Sri Thyagi M Palanivelu Road, Xavier Layout, Victoria Layout, Bengaluru, Karnataka, 560007", "c": "Bengaluru", "l": "https://maps.app.goo.gl/nvxDAaE2SQpsTpU88", "p": "096206 41480"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Mogappair", "a": "Shop No: 65, 1st Avenue,Bharathi Salai, 4th Block, Mogappair, Chennai, Tamil Nadu, 600037", "c": "Chennai", "l": "https://maps.app.goo.gl/sqBg62k52XUDqe8e6", "p": "095144 52780"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Worldmark Sector 65", "a": "World Mark Tower 3, Sector 65, Gurugram, Haryana, 122102", "c": "Gurugram", "l": "https://maps.app.goo.gl/s23hBkAVCCQ94qRR6", "p": "099532 21329"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Oasis Centre", "a": "Ground Floor, 100 Feet Rd, Oasis Centre Mall, Srinivagilu Main Road, AVS Layout, Koramangala, Bengaluru, Karnataka, 560047", "c": "Bengaluru", "l": "https://maps.app.goo.gl/eVtfjB6q2nkLQwDw6", "p": "070920 03486"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | VR Mall", "a": "VR Mall, Ground Floor, Atrium, Jawaharlal Nehru Rd, Anna Nagar West, Anna, Nagar, Chennai, Tamil Nadu, 600040", "c": "Chennai", "l": "https://maps.app.goo.gl/BqzSZhCohv8KyzpL6", "p": "095144 52780"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Phoenix Market City", "a": "3rd, Phoenix Market City, Velachery Road, Indira Gandhi Nagar, Velachery, Chennai, Tamil Nadu, 600042", "c": "Chennai", "l": "https://maps.app.goo.gl/7GcqKaTfwHooRq3R9", "p": "086808 40062"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | DSL Virtue Mall", "a": "UNIT No:, DSL MALL VIRTUE MALL, UPPER GROUND FLOOR, Industrial Development Area, Uppal, Hyderabad, Telangana, 500039", "c": "Hyderabad", "l": "https://maps.app.goo.gl/1jQVhotFnsh2zmze7", "p": "070366 52195"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Shipra Mall", "a": "Shop No.5, Food Forum, Food Court - Shipra Mall, Vaibhav Khand, Indirapuram, Ghaziabad, Uttar Pradesh, 201014", "c": "Ghaziabad", "l": "https://maps.app.goo.gl/L7brnw4sHQLFLKix9", "p": "096507 26453"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | AMR Planet Mall", "a": "SURVEY No:373/1 & 3, AMR PLANET Mall, Hyderabad, Telangana, 500040", "c": "Hyderabad", "l": "https://maps.app.goo.gl/vvi5WNf1L9nntt4U7", "p": "070366 52195"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Kajjaguda", "a": "Krispy Kreme, Plot Nos. 28 to 31, Oak Plaza, Opp. Oakridge International, School,, Khajaguda, Nanakram Guda Road, Gachibowli, Hyderabad, Telangana, 500008", "c": "Hyderabad", "l": "https://maps.app.goo.gl/w1RHW7kEk9o3GUfS9", "p": "072072 00055"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | RMZ Ecoworld", "a": "Kiosk No. 78, Campus 32, RMZ Ecoworld Road, opposite The Bay, Bengaluru, Karnataka, 560103", "c": "Bengaluru", "l": "https://maps.app.goo.gl/7UCA2EG2ypEQ2Fz4A", "p": "081510 71666"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Garuda Mall", "a": "Ground Floor, Garuda Mall, Magrath Road, Ashok Nagar, Bengaluru, Karnataka, 560025", "c": "Bengaluru", "l": "https://maps.app.goo.gl/Qa1nKLqEA8fh6JEx7", "p": "096206 41480"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Crystal Palm Mall", "a": "Shop No. ATM 3, Crystal Palm, Sardar Patel Marg, Sahkar Circle, Shivaji Nagar, Jaipur, Rajasthan, 302001", "c": "Jaipur", "l": "https://maps.app.goo.gl/Kny97hK5sxq4h2Xh6", "p": "099174 11601"},
+        {"n": "Krispy Kreme Doughnuts & Coffee", "a": "Bearing Number 1,2,3 Ambalipura village, Sarjapura Main Road, Bellandur Gate, B.B.M.P East, Bellandur Gate, Bangalore, Karnataka, 560102", "c": "Bengaluru", "l": "https://maps.app.goo.gl/BKiE9SFZ3irK4o469 ", "p": "089511 30541"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Banashankari", "a": "Building no. 590, 24th Cross,, 14th Main, Banashankri 2nd Stage, Basavanagudi,, BBMP south, Bangalore, Karnataka, 560070", "c": "Bengaluru", "l": "https://maps.app.goo.gl/JwabuGBfSnLH9jyo6", "p": "080950 24285"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Jaipur highway 63", "a": "Block 9, The Village Haat, 63LHS, On Delhi Mumbai Expressway, NE no. 4, Village Firozepur, Jhirka, near Indian Oil, Baghola, Palwal, Haryana, 122104", "c": "Palwal", "l": "https://maps.app.goo.gl/rQeSq3wrQnNxyekv6", "p": "098109 61107"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Embassy Tech Village", "a": "Food & Beverage Counter No. 1, Ground Floor, Parcel 5 (Common Area),, Embassy Tech Village, Devarabeesanahalli, Mahadevapura, Bengaluru, Karnataka, 560103", "c": "Bengaluru", "l": "https://maps.app.goo.gl/q2532AcY9CfcvL3Y9", "p": "085558 67284"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Mantri Square Mall", "a": "KRISPY KREME KIOSK NO K /LG/03,LOWERGROUNDFLOOR, Mantri Square Mall, NO 1 2NDMAIN ROAD, Malleshwaram, Bengaluru, Karnataka, 560003", "c": "Bengaluru", "l": "https://maps.app.goo.gl/XdkghTLDcUKHqTCx7", "p": "073493 43749"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Bharatiya City Mall", "a": "1st, Bhartiya City, Thanisandra Main Road, Bengaluru, Karnataka, 560064", "c": "Bengaluru", "l": "https://maps.app.goo.gl/KZcYbob1hCrnLWjP8", "p": "063618 64929"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | SD Road", "a": "H NO.9-1-122 & 123, SD Road, Near Clock Tower, Sangeeth circle, Secunderabad, Telangana, 500003", "c": "Secunderabad", "l": "https://maps.app.goo.gl/KF6aZDGg3XHKZPfG7", "p": "070366 52195"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Terminal 1 Bangalore", "a": "Krispy Kreme doughnut Airport Quad, Opp. Arrivals, Behind Starbucks, Ground floor T1, Bangalore International Airport Devanahalli, Bangalore, Karnataka, 560300", "c": "Bengaluru", "l": "https://maps.app.goo.gl/Zcy4oGVV717BaHGc7", "p": "099169 23869"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Garu City Mall", "a": "LGF K 34 & 35, Gaur City, mall, C-01B/GH-01, Sector-04, Greater Noida (West), Greater Noida, Uttar Pradesh, 201310", "c": "Greater Noida", "l": "https://maps.app.goo.gl/ffTAT9kydy9t7oeF9", "p": "085274 06170"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Select City Walk Saket", "a": "Second floor, Select Citywalk Mall, Pushp Vihar, New Delhi, Delhi, 110017", "c": "New Delhi", "l": "https://maps.app.goo.gl/28ErFHR2A9X2MRAZ7", "p": "076076 07684"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Delhi highway 69", "a": "Block 9, The Village Haat, 69RHS, On Delhi Mumbai Expressway, NE no. 4,, Village Firozepur, Jhirka, Near Indian Oil,, Bhagola, Palwal, Haryana, 122104", "c": "Palwal", "l": "https://maps.app.goo.gl/7NvgdUKEVqutepmRA", "p": "098109 61107"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Seegehalli", "a": "Shop No. 3, Block C, Green Field Hub, Ground Floor, Near Seegehalli Govt, School, Hoskote–Whitefield Main Road, Seegehalli, Bengaluru, Karnataka, 560067", "c": "Bengaluru", "l": "https://maps.app.goo.gl/hEwin516CeMdbVoBA", "p": "093804 67346"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Kammanahalli", "a": "5M 401, 2nd Block, HRBR Extension Kalyan Nagar, Bengaluru, Karnataka, 560043", "c": "Bengaluru", "l": "https://maps.app.goo.gl/FEi9SCqdpkLdRmkz9", "p": "093538 02737"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | L&T Mall", "a": "L&T Metro Mall, B7, Nagarjuna Hills, Punjagutta, Hyderabad, Telangana, 500082", "c": "Hyderabad", "l": "https://maps.app.goo.gl/AjeQqKajP6zgmJ58A", "p": "070934 16560"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Ambience Mall", "a": "3rd Floor, Ambience Mall, Mehrauli-Gurgaon Road, Sector 26, Gurugram, Haryana, 122002", "c": "Gurugram", "l": "https://maps.app.goo.gl/xY7UxygmrxtYDpNZ9", "p": "088595 82716"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Dhillon Plaza", "a": "Kiosk -1, Opp. PVR-INOX Building, Dhillon Plaza, Chattbir Road, Zirakpur, Punjab, 140603", "c": "Zirakpur", "l": "https://maps.app.goo.gl/CpSi9mJUyMqWQ2ot5", "p": "089109 61107"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Orion Mall", "a": "Second floor, Orion Mall, BRIGADE GATEWAY, Doctor Rajkumar Road, Bengaluru, Karnataka, 560055", "c": "Bengaluru", "l": "https://maps.app.goo.gl/o57tNAwwpugVZJqV8", "p": "090357 32248"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Sarath City Mall", "a": "Whitefields, Kondapur, Telangana, 500084", "c": "Kondapur", "l": "https://maps.app.goo.gl/Fc78cGnm61izeTh88", "p": "072072 00055"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | HSR Layout", "a": "NO 88 14th MAIN 17th CROSS, SECTOR 04 HSR LAYOUT, BTM Layout, B.B.M.P South, Bengaluru, Karnataka, 560102", "c": "Bengaluru", "l": "https://maps.app.goo.gl/jHJrq6eHeALQEfLJ6", "p": "090739 97474"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Karnal Haveli", "a": "Karnal Haveli, 133.5 KM, VPO Jhanjhari, Karnal, Haryana, 122012", "c": "Karnal", "l": "https://maps.app.goo.gl/gN8zQeWZX3WTcjaL6", "p": "089109 61107"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | KLJ Square", "a": "Ground Floor, Mini Anchor 1, Tower A, AR Suites by Ahuja residency, NH-8,, Sector 83, Gurugram, Haryana, 122012", "c": "Gurugram", "l": "https://maps.app.goo.gl/EKpXR4EQxCAomcfy8", "p": "089109 61107"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | KW Blue Pearl Mall", "a": "Unit No- KG 06 (G -15) ground floor, KW Blue pearl Mall, Ashok Nagar, DB, Gupta Road, Near Fiaz Chowk, Karol Bagh, New delhi, Delhi, 110005", "c": "New Delhi", "l": "https://maps.app.goo.gl/nw3zwNsYQC2Mkd3m7", "p": "083682 45895"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Marina Mall", "a": "Marina Mall 13/1A Old Mahabalipuram road, Egattur, Tamil Nadu, 603103", "c": "Egattur", "l": "https://maps.app.goo.gl/2FV4RFGeWHqToDPX8", "p": "077087 62491"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Express Avenue Mall", "a": "Shop no. F&B 02, Ground Floor, Express Avenue Mall, Whites Road, Royapettah, Chennai, Tamil Nadu, 600014", "c": "Chennai", "l": "https://maps.app.goo.gl/DDGBZxuFKhHrUcaQA", "p": "098849 77376"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Inorbit Mall", "a": "C9MP+GG9, Inorbit Mall Road, Vittal Rao Nagar, HITEC City, Hyderabad, Telangana, 500081", "c": "Hyderabad", "l": "https://maps.app.goo.gl/nr7YxHLDtsGk8e5R8", "p": "095059 25256"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Valasaravakkam", "a": "Door No. 60 B, Thandavamurthinagar, Arcot Road, Valsaravakkam, Chennai, Tamil Nadu, 600087", "c": "Chennai", "l": "https://maps.app.goo.gl/kHJcfqBdaAgK49kR7", "p": "099400 31865"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Embassy Golf Links", "a": "Shop No.07, Pyramid Food Court, 1 AND 7/3, Embassy Golf Links Business Park, Domlur, Bengaluru, Karnataka, 560071", "c": "Bengaluru", "l": "https://maps.app.goo.gl/HTuaTT1GJ1i9Aoof7", "p": "073534 38134"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Lulu Mall", "a": "Kiosk TF-10A, Third Floor, KT-8, Lulu International Shopping Mall, KPHB Colony, Kukatpally, Moosapet Circle No. 23, Hyderabad, Telangana, 500072", "c": "Hyderabad", "l": "https://maps.app.goo.gl/k9DgrFrdqir6sMrv8", "p": "099892 26839"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Aparna Neo Mall", "a": "SY NO.282P & 294P, Aparna neo Mall, F886+Q5P, Nallagandla Rd, HUDA Layout, Nallagandla, Hyderabad, Telangana, 500046", "c": "Hyderabad", "l": "https://maps.app.goo.gl/PsZn3zNTk6NZoZEd7", "p": "072072 00055"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Koramangala", "a": "116, Koramangala 80 Feet Road, 7th Block, Koramangala, Bengaluru, Karnataka, 560095", "c": "Bengaluru", "l": "https://maps.app.goo.gl/dH68y3MdKxg15G1B6", "p": "090086 59453"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Harlur", "a": "Premise 48, Shub Enclave, Main Harlur Road, Harlur, Karnataka, 560102", "c": "Harlur", "l": "https://maps.app.goo.gl/JY3UnzpvzefKTkhr6", "p": "090354 77305"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | RMZ Skyview", "a": "Stall No. 2, First Floor, Tower 10, The Skyview, Sy. No. 83/1, Raidurgam,, Hitech City Main Road, Serilingampally, Hyderabad, Telangana, 500081", "c": "Hyderabad", "l": "https://maps.app.goo.gl/xeedMEn9kWmNGi3y6", "p": "072072 00055"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Bagmane Tech Park", "a": "Kiosk No.04, Onyx Food Court, Bagmane World Technology Center, Laxmi Sagar Layout, Mahadevapura, Bengaluru, Karnataka, 560048", "c": "Bengaluru", "l": "https://maps.app.goo.gl/7kpRai3zjAeqVihS6", "p": "081510 71666"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Velachery", "a": "No. 38/1, Ground Floor, 100 Feet Bypass Road, Velachery, Chennai, Tamil Nadu, 600042", "c": "Chennai", "l": "https://maps.app.goo.gl/DLvFPMRbpKG6EXn98", "p": "086808 40062"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Orion Avenue Mall", "a": "Shop No.80, Located in - Orion Avenue Mall, 10/34, Banaswadi, Dodda Banaswadi Main Rd, Jaibharath Nagar, Sathya Nagar, Maruthi Sevanagar, Bengaluru, Karnataka, 560033", "c": "Bengaluru", "l": "https://maps.app.goo.gl/bevbezSwtwfsKgbg9", "p": "082966 87618"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Pacific Mall NSP Pitampura", "a": "Unit No -1000/ML005NSP/EKGF19, Walkstreet, Pacific Mall NSP Pitampura, Pitampura, New Delhi, Delhi, 110034", "c": "New Delhi", "l": "https://maps.app.goo.gl/1iyiopEk3WMv4PS57", "p": "083682 45895"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Nexus Vijaya Mall", "a": "Upper Ground Floor, Kiosk No 3 & 4, Nexus Vijaya Mall, No.183, NSK Salai Road, Chennai, Tamil Nadu, 600024", "c": "Chennai", "l": "https://maps.app.goo.gl/mfCsgisR2FW5M1Hw9", "p": "099400 31865"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Embassy Splendid Tech", "a": "Velan Nagar, Arulmurugan Nagar, Old Pallavaram, Chennai, Chennai, Tamil Nadu, 600043", "c": "Chennai", "l": "https://maps.app.goo.gl/RnHN5f3Yv9LobH3d6", "p": "099626 74810"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Anna Nagar", "a": "Plot No. 995-A, No. 1 A/4, Second Avenue facing 11th Main Road, Annanagar, Chennai, Tamil Nadu, 600040", "c": "Chennai", "l": "https://maps.app.goo.gl/AYFM9uha9ovNtxMk6", "p": "095144 52780"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Forum Mall", "a": "Ground Floor No. 21, Hosur Rd, Chikku Lakshmaiah Layout, Koramangala,, The Forum Mall, Bengaluru, Karnataka, 560095", "c": "Bengaluru", "l": "https://maps.app.goo.gl/q6a4Cv7vMF54B2te8", "p": "091488 59081"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Besant Nagar", "a": "No. 4, New No. 1/4, Block M-8, 4th Main Road, Besant Nagar, Chennai, Tamil Nadu, 600090", "c": "Chennai", "l": "https://maps.app.goo.gl/NsySqCtp9TQgofxKA", "p": "086808 40062"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Ardee Mall", "a": "Krispy Kreme, 1st Floor, Ardee Mall, Ardee City, Sector 52, Gurugram, Haryana, 122022", "c": "Gurugram", "l": "https://maps.app.goo.gl/vpNSJWhXKkiqYvZr5", "p": "074045 11507"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | GVK One Mall", "a": "Kiosk No -6, Ground Floor, GVK One Mall, Road No. 1, Banjara Hills, Road Number 1, Banjara Hills, Hyderabad, Telangana, 500034", "c": "Hyderabad", "l": "https://maps.app.goo.gl/NtQZ3txptC5ayV7a8", "p": "070934 16560"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Manyata Tech Park", "a": "Kiosk No. 1A, Ground Floor, Central Park Amphitheatre, Thanisandra, Bengaluru, Karnataka, 560045", "c": "Bengaluru", "l": "https://maps.app.goo.gl/Gy23Lgifb5TMYR6T9", "p": "070902 78415"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Prestige Gravity", "a": "Unit No. 1 , Cafe 9, Level 1, Prestige Tech Park IV – The Gravity,, Kadubeesanahalli, Outer Ring Road, Bengaluru, Karnataka, 560103", "c": "Bengaluru", "l": "https://maps.app.goo.gl/DWsfd7jNuKkEFLbVA", "p": "081510 71666"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Ampa Skyone Mall", "a": "AMPA Skyone 3rd Floor, No.1, Nelson Manickam Rd, Aminjikarai, Chennai, Tamil Nadu, 600030", "c": "Chennai", "l": "https://maps.app.goo.gl/2N6JfV9Ui4jbrRd79", "p": "099406 87278"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Indiranagar", "a": "GROUND FLOOR, NO. 961, 12th Main Road, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka, 560008", "c": "Bengaluru", "l": "https://maps.app.goo.gl/m5w8jaiSJJhp9CbJ6", "p": "097413 10292"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Phoenix Market City", "a": "SM-113, Lower Ground Floor, Phoenix Market City, Whitefield Main Road, Devasandra Industrial Estate, Mahadevapura, Bengaluru, Karnataka, 560048", "c": "Bengaluru", "l": "https://maps.app.goo.gl/jnqbPDCK7TUxHpBs9", "p": "099862 99162"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Mall of India", "a": "H88C+X7P, Sector 18, Noida, Uttar Pradesh, 201301", "c": "Noida", "l": "https://maps.app.goo.gl/59Gxp5iu1bTzY1Ue6", "p": "085270 62910"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Nexus Whitefield", "a": "Unit No - 3F303A, Third floor, 62, Whitefield Main Rd, Prestige Ozone,, Whitefield, Located In - Nexus neighbourhood mall, Bengaluru, Karnataka, 560066", "c": "Bengaluru", "l": "https://maps.app.goo.gl/f3fKXkDsZL5P2yQL8", "p": "089511 30541"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Basaveshwar Nagar", "a": "NO.572, 3rd Stage, 4rth Block, Basaveshwaranagar, Bengaluru, Karnataka, 560079", "c": "Bengaluru", "l": "https://maps.app.goo.gl/SzshvgCGDAKdzdbBA", "p": "096325 72665"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Vega City Mall", "a": "2nd Floor, Vegacity, No. 172/1, Srinivas Industrial Estate, Bannerghatta Road, Dollar Layout, Stage 2, Bilekahalli, Bengaluru, Karnataka, 560076", "c": "Bengaluru", "l": "https://maps.app.goo.gl/WiU6KrqJv3Z6KqjV9", "p": "090710 77680"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | St Mark's Road", "a": "Shop No.17, St Mark's Rd, Located in- Vasavi complex, opposite SBI Bank, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka, 560001", "c": "Bengaluru", "l": "https://maps.app.goo.gl/a69d9oyfjJHaj2qD6", "p": "096325 72665"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Nexus Hyderabad Mall", "a": "The Forum Sujana Mall, K P H B Phase 9, Kukatpally, Hyderabad, Telangana, 500085", "c": "Hyderabad", "l": "https://maps.app.goo.gl/YFm6Wdu1frwRvRRv9", "p": "099892 26839"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Santhome", "a": "No-13, Muthu Pandian Avenue, Santhome High Road, Santhome, Chennai, Tamil Nadu, 600004", "c": "Chennai", "l": "https://maps.app.goo.gl/WUpm9cekKvHNhqSn9", "p": "098849 77376"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Falcon City", "a": "KIOSK - 4, UG FLOOR, FORUM FALCON CITY MALL, KANAKPURA ROAD, Jayanagar, Benagaluru, Karnataka, 560062", "c": "Bengaluru", "l": "https://maps.app.goo.gl/qEV8DuExWHCq9Sbc7", "p": "097319 25207"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Shantiniketan Mall", "a": "Forum Shantiniketan Food Court, Thigalarapalya, Krishnarajapuram, Bengaluru, Karnataka, 560067", "c": "Bengaluru", "l": "https://maps.app.goo.gl/qEuvBfBGuZnexVCYA", "p": "076196 54877"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Mayajaal", "a": "34/1, 1st floor, East Coast Road (ECR), Kanathur, Chennai, Tamil Nadu, 603112", "c": "Chennai", "l": "https://maps.app.goo.gl/at8pgPKyrY9AMqqR8", "p": "077087 62491"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Mall of Asia", "a": "Second Floor, Phoenix Mall of Asia, Bengaluru, Karnataka, 560092", "c": "Bengaluru", "l": "https://maps.app.goo.gl/LUXKfNm4c9JHtFC2A", "p": "099868 41209"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Irrum Manzil Mall", "a": "Metro Station, Errum Manzil Kiosk No. 01, 1st Floor, Next Premia Mall, Os No.01, Hyderabad, Telangana, 500082", "c": "Hyderabad", "l": "https://maps.app.goo.gl/jrDiVA95QhGVjWJe9", "p": "070934 16560"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Jayanagar", "a": "49, Aurobindo Marg, 4th T Block East, Pattabhirama Nagar, Jayanagar, Bengaluru, Karnataka, 560041", "c": "Bengaluru", "l": "https://maps.app.goo.gl/rkgU7FWRCdhJzP5LA", "p": "080 4171 8398"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | Worldmark 1 Aerocity", "a": "Shop No-5,LGF, World Mark -1,Aerocity, New Delhi, Delhi, 110037", "c": "New Delhi", "l": "https://maps.app.goo.gl/oiy8j4v7AjvgSy6e6", "p": "082878 42273"},
+        {"n": "Krispy Kreme Doughnuts & Coffee | World Trade Park", "a": "Shop no. 5 Food court, MZ floor, South Block, World trade park, Jaipur, Rajasthan, 302017", "c": "Jaipur", "l": "https://maps.app.goo.gl/CksQBMkeuHc99cE19", "p": "099174 11601"}
+    ];
+
+    // Precise sub-locality coordinates so Delhi stores strictly sort ahead of Gurgaon/Noida when in Delhi
+    const rawCityCoords = {
+        "New Delhi": {lat: 28.6139, lng: 77.2090},
+        "Gurugram": {lat: 28.4595, lng: 77.0266},
+        "Noida": {lat: 28.5355, lng: 77.3910},
+        "Greater Noida": {lat: 28.4744, lng: 77.5040},
+        "Ghaziabad": {lat: 28.6692, lng: 77.4538},
+        "Palwal": {lat: 28.1487, lng: 77.3260},
+        "Bengaluru": {lat: 12.9716, lng: 77.5946},
+        "Harlur": {lat: 12.9116, lng: 77.6620},
+        "Chennai": {lat: 13.0827, lng: 80.2707},
+        "Egattur": {lat: 12.8259, lng: 80.2280},
+        "Hyderabad": {lat: 17.3850, lng: 78.4867},
+        "Secunderabad": {lat: 17.4399, lng: 78.4983},
+        "Kondapur": {lat: 17.4622, lng: 78.3568},
+        "Zirakpur": {lat: 30.6425, lng: 76.8173},
+        "Karnal": {lat: 29.6857, lng: 76.9905},
+        "Jaipur": {lat: 26.9124, lng: 75.7873},
+        "Pune": {lat: 18.5204, lng: 73.8567}
+    };
+
+    // 1. Assign lat/lng coordinates based on store's specific location BEFORE grouping
+    stores = stores.map((store, idx) => {
+        const coords = rawCityCoords[store.c] || {lat: 28.6139, lng: 77.2090};
+        const latOffset = ((idx * 17) % 10 - 5) * 0.002;
+        const lngOffset = ((idx * 23) % 10 - 5) * 0.002;
+        return {
+            ...store,
+            lat: coords.lat + latOffset,
+            lng: coords.lng + lngOffset
+        };
+    });
+
+    // 2. Remap store.c to regional dropdown categories for filter options
+    const cityMap = {
+        "Bengaluru": "Bangalore",
+        "Harlur": "Bangalore",
+        "Chennai": "Chennai",
+        "Egattur": "Chennai",
+        "New Delhi": "Delhi NCR",
+        "Gurugram": "Delhi NCR",
+        "Noida": "Delhi NCR",
+        "Greater Noida": "Delhi NCR",
+        "Ghaziabad": "Delhi NCR",
+        "Palwal": "Delhi NCR",
+        "Karnal": "Chandigarh",
+        "Hyderabad": "Hyderabad",
+        "Secunderabad": "Hyderabad",
+        "Kondapur": "Hyderabad",
+        "Zirakpur": "Chandigarh",
+        "Jaipur": "Jaipur",
+        "Pune": "Pune"
+    };
+
+    stores.forEach(store => {
+        if (cityMap[store.c]) store.c = cityMap[store.c];
+    });
+
+    const grid = document.getElementById('kk-store-grid');
+    const gridView = document.getElementById('kk-grid-view');
+    const detailView = document.getElementById('kk-detail-view');
+    const detailContent = document.getElementById('kk-detail-content');
+    
+    const quickSearchInput = document.getElementById('kk-quick-search');
+    const citySelect = document.getElementById('kk-city-select');
+    const outletSelect = document.getElementById('kk-outlet-select');
+    const searchBtn = document.getElementById('kk-search-btn');
+    const geoBtn = document.getElementById('kk-geo-btn');
+    const geoBtnText = document.getElementById('kk-geo-btn-text');
+    const resultsText = document.getElementById('kk-results-text');
+    const loadMoreBtnContainer = document.getElementById('kk-load-more-btn-container');
+    const loadMoreBtn = document.getElementById('kk-load-more-btn');
+
+    // Default visitor location set to New Delhi center (28.6139, 77.2090)
+    let currentUserCoords = { lat: 28.6139, lng: 77.2090 };
+    let currentFilteredResults = [];
+    let itemsToShow = 8;
+    const itemsPerLoad = 8;
+
+    const allowedCities = ["Bangalore", "Chennai", "Delhi NCR", "Hyderabad", "Chandigarh", "Jaipur", "Pune"];
+    allowedCities.forEach(city => {
+        const opt = document.createElement('option');
+        opt.value = city;
+        opt.textContent = city;
+        citySelect.appendChild(opt);
+    });
+
+    function calculateDistance(lat1, lon1, lat2, lon2) {
+        const R = 6371; 
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+    }
+
+    function performSearch() {
+        closeDetailedPanel();
+
+        const query = quickSearchInput.value.toLowerCase();
+        const selectedCity = citySelect.value;
+        const selectedOutlet = outletSelect.value;
+        let results = [...stores]; 
+
+        if (query.trim() !== '') results = results.filter(s => s.n.toLowerCase().includes(query) || s.a.toLowerCase().includes(query));
+        if (selectedCity !== 'All') results = results.filter(s => s.c === selectedCity);
+        if (selectedOutlet !== 'All') results = results.filter(s => s.n === selectedOutlet);
+
+        if (currentUserCoords) {
+            results = results.map(store => ({ ...store, distance: calculateDistance(currentUserCoords.lat, currentUserCoords.lng, store.lat, store.lng) }));
+            results.sort((a, b) => a.distance - b.distance);
+        }
+
+        let searchString = '';
+        if (query.trim() !== '') searchString = query.toUpperCase();
+        else if (selectedOutlet !== 'All') searchString = selectedOutlet.replace("Krispy Kreme Doughnuts & Coffee | ", "").replace("Krispy Kreme | ", "").toUpperCase();
+        else if (selectedCity !== 'All') searchString = selectedCity.toUpperCase();
+        else searchString = "NEAREST LOCATIONS";
+        
+        resultsText.innerHTML = `<span class="count">${results.length}</span> RESULT${results.length !== 1 ? 'S' : ''} <span style="color:var(--kk-green)">FOR "${searchString}"</span>`;
+        
+        currentFilteredResults = results;
+        itemsToShow = itemsPerLoad;
+        updateResultsUI();
+    }
+
+    function updateResultsUI() {
+        const visibleData = currentFilteredResults.slice(0, itemsToShow);
+        renderCards(visibleData);
+
+        if (itemsToShow < currentFilteredResults.length) {
+            loadMoreBtnContainer.style.display = 'block';
+        } else {
+            loadMoreBtnContainer.style.display = 'none';
+        }
+    }
+
+    loadMoreBtn.addEventListener('click', () => {
+        itemsToShow += itemsPerLoad;
+        updateResultsUI();
+    });
+
+    quickSearchInput.addEventListener('input', performSearch);
+    
+    citySelect.addEventListener('change', function() {
+        const selectedCity = this.value;
+        outletSelect.innerHTML = '<option value="All">Select Outlet</option>';
+        
+        let availableOutlets = stores;
+        if (selectedCity !== 'All') availableOutlets = stores.filter(s => s.c === selectedCity);
+
+        availableOutlets.sort((a, b) => a.n.localeCompare(b.n)).forEach(store => {
+            const opt = document.createElement('option');
+            opt.value = store.n;
+            opt.textContent = store.n.toUpperCase();
+            outletSelect.appendChild(opt);
+        });
+        
+        if(selectedCity !== 'All') currentUserCoords = null; 
+        
+        performSearch();
+    });
+
+    outletSelect.addEventListener('change', performSearch);
+    searchBtn.addEventListener('click', performSearch);
+
+    geoBtn.addEventListener('click', function() {
+        if ("geolocation" in navigator) {
+            geoBtnText.textContent = "LOCATING...";
+            navigator.geolocation.getCurrentPosition(
+                position => {
+                    currentUserCoords = { lat: position.coords.latitude, lng: position.coords.longitude };
+                    geoBtnText.textContent = "LOCATION FOUND";
+                    quickSearchInput.value = '';
+                    citySelect.value = 'All';
+                    outletSelect.innerHTML = '<option value="All">Select Outlet</option>';
+                    performSearch();
+                    setTimeout(() => { geoBtnText.textContent = "USE MY LOCATION"; }, 3000);
+                },
+                error => {
+                    alert("Unable to retrieve location. Please check browser permissions.");
+                    geoBtnText.textContent = "USE MY LOCATION";
+                }
+            );
+        } else {
+            alert("Geolocation is not supported by your browser.");
+        }
+    });
+
+    function openDetailedPanel(store) {
+        gridView.style.display = 'none';
+        detailView.style.display = 'block';
+        
+        const rawPhone = store.p ? store.p.replace(/\s+/g, '') : '';
+        const displayPhone = store.p ? store.p : 'Not Available';
+        const mapEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent(store.a)}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
+
+        detailContent.innerHTML = `
+            <div class="kk-detail-map">
+                <iframe src="${mapEmbedUrl}"></iframe>
+            </div>
+            <div class="kk-detail-info">
+                <h2 class="kk-store-name">${store.n}</h2>
+                <p class="kk-store-address">
+                    <i class="fa fa-map-marker" style="color: var(--kk-red); margin-right: 8px;"></i>
+                    ${store.a}
+                </p>
+                
+                <div class="kk-detail-extra-grid">
+                    <div class="kk-extra-box">
+                        <h4>Store Information</h4>
+                        <ul>
+                            <li><i class="fa fa-calendar-o"></i> <strong>Days:</strong> Monday - Sunday</li>
+                            <li><i class="fa fa-clock-o"></i> <strong>Hours:</strong> 10:00 AM - 11:00 PM</li>
+                            <li><i class="fa fa-phone"></i> <strong>Phone:</strong> ${displayPhone}</li>
+                        </ul>
+                    </div>
+                    <div class="kk-extra-box">
+                        <h4>Amenities Available</h4>
+                        <ul>
+                            <li><i class="fa fa-car"></i> Parking Facility</li>
+                            <li><i class="fa fa-coffee"></i> Dine-in Seating</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="kk-special-offer">
+                    <i class="fa fa-star"></i>
+                    <span><strong>Current Offer:</strong> Make it a box of Dozen with Buy 8 & Get 4 FREE!</span>
+                </div>
+
+                <div class="kk-detail-actions">
+                    <a href="${store.l}" target="_blank" rel="noopener noreferrer" class="kk-btn-dir">
+                        <i class="fa fa-location-arrow"></i> GET DIRECTIONS
+                    </a>
+                    <a href="tel:${rawPhone}" class="kk-btn-call">
+                        <i class="fa fa-phone"></i> CALL STORE
+                    </a>
+                </div>
+            </div>
+        `;
+        
+        window.scrollTo({ top: document.querySelector('.kk-search-wrapper').offsetTop, behavior: 'smooth' });
+    }
+
+    closeDetailedPanel = function() {
+        detailView.style.display = 'none';
+        gridView.style.display = 'block';
+    }
+
+    function renderCards(data) {
+        grid.innerHTML = '';
+        
+        const promoCardHTML = `
+            <div class="kk-promo-card">
+                <i class="fa fa-map-marker kk-promo-pin"></i>
+                <h3 class="kk-promo-title">Can't find us?</h3>
+                <p class="kk-promo-text">We might be closer than you think! Enter your location and we'll help you find the nearest Krispy Kreme store.</p>
+                <button class="kk-promo-btn" onclick="document.getElementById('kk-geo-btn').click();">
+                    <i class="fa fa-map-marker"></i> USE MY LOCATION
+                </button>
+                <img src="../assets/media/3435345.png" style="filter: brightness(0.9) grayscale(0.5); object-fit: cover; border-radius: 12px;" class="kk-promo-img" alt="Store outline">
+            </div>
+        `;
+
+        data.forEach((store, index) => {
+            // Append the promo card as the 9th slot when list length reaches index 8
+            if (index === 8) {
+                grid.insertAdjacentHTML('beforeend', promoCardHTML);
+            }
+
+            const card = document.createElement('div');
+            card.className = 'kk-card';
+            
+            const rawPhone = store.p ? store.p.replace(/\s+/g, '') : '';
+            const displayPhone = store.p ? store.p : 'N/A';
+            const mapEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent(store.a)}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+            
+            let distBadge = '';
+            if(currentUserCoords && store.distance !== undefined) {
+                distBadge = `<div class="kk-distance-badge">${store.distance.toFixed(1)} km</div>`;
+            }
+
+            card.innerHTML = `
+                <div class="kk-card-map">
+                    <iframe loading="lazy" src="${mapEmbedUrl}"></iframe>
+                    <a href="${store.l}" target="_blank" rel="noopener noreferrer" class="kk-open-maps" onclick="event.stopPropagation()">
+                        Open in Maps <i class="fa fa-external-link"></i>
+                    </a>
+                    ${distBadge}
+                </div>
+                <div class="kk-card-content">
+                    <h2 class="kk-store-name">${store.n}</h2>
+                    <p class="kk-store-address">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>${store.a}</span>
+                    </p>
+                    <div class="kk-store-meta">
+                        <div class="kk-meta-item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <span>Mon - Sun</span>
+                        </div>
+                        <div class="kk-meta-item">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span>10:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="kk-meta-item">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>${displayPhone}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="kk-card-actions">
+                        <a href="tel:${rawPhone}" class="kk-btn-call" onclick="event.stopPropagation()">
+                            <i class="fa fa-phone" aria-hidden="true"></i> CALL
+                        </a>
+                        <a href="${store.l}" target="_blank" rel="noopener noreferrer" class="kk-btn-dir" onclick="event.stopPropagation()">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i> DIRECTIONS
+                        </a>
+                    </div>
+                </div>
+            `;
+            
+            card.addEventListener('click', () => {
+                openDetailedPanel(store);
+            });
+            
+            grid.appendChild(card);
+        });
+
+        // Ensure on initial 8-item view or smaller results, the promo card is appended as the 9th item
+        if (data.length <= 8) {
+            grid.insertAdjacentHTML('beforeend', promoCardHTML);
+        }
+    }
+
+    // Initial load execution
+    performSearch();
+});
+</script></div>
+										</div>
+																			</div>
+																	</section>
+							
+						   			    
+		
+		
+		  					<!-- <div class="contact-info">
+				  		<p class="site-location">
+				  			<a href="../">
+				  				GET DIRECTIONS
+				  			</a>
+						</p>     
+					</div> -->
+					</div>
+                    						        	
+				</section>
+
+                   
+                  
+
+		    </main>
+		</section>
+        		
+        <script type="text/javascript" src="../assets/js/jquery.lazyload.js"></script><script type="text/javascript">jQuery(document).ready(function(e) { if(jQuery(".lazy").length > 0){ jQuery(".lazy").show().lazyload();} });</script><style>img.lazy{background:url("../assets/img/ui/ajax-loader_4.gif"); background-position:center center; background-repeat:no-repeat;};</style><footer class="site-footer">
+<div class="f-brand"><img alt="Krispy Kreme" src="../assets/img/logos/original/1538203844_KKNEWLogo.png" />
+
+</div>
+
+<div class="f-col">
+<h4>Quick Links</h4>
+<a href="#menu">Menu</a> <a href="#stores">Find A Store</a> <a href="../our-story/">About Us</a></div>
+
+<div class="f-col">
+<h4>Order Online</h4>
+<a href="#swiggy">Swiggy</a> <a href="#zomato">Zomato</a>  <a href="#corporate" style="margin-top: 10px;">Corporate Orders</a></div>
+
+<div class="f-col">
+<h4>Connect</h4>
+
+<div class="f-social"><a href="https://www.instagram.com/krispykreme_ind" target="_blank"><svg viewbox="0 0 24 24"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a> <a href="#" target="_blank"><svg viewbox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></div>
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Krispy Kreme India. All rights reserved.</p>
+</div>
+</footer>
+</div>
+<script>
+    document.body.classList.add('kk-locked');
+
+    function openOrderModal(event) {
+        if(event) event.preventDefault();
+        const modal = document.getElementById("orderModalOverlay");
+        modal.classList.add("active");
+    }
+
+    function closeOrderModal(event) {
+        if(event) {
+            if(event.target !== event.currentTarget) return;
+        }
+        const modal = document.getElementById("orderModalOverlay");
+        modal.classList.remove("active");
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const counter = { value: 0 };
+        const countEl = document.querySelector('#kk-preloader .loader-counter');
+        const mainWrapper = document.getElementById('kk-lp-wrapper');
+        
+        gsap.set(mainWrapper, { opacity: 0 });
+
+        const tl = gsap.timeline({
+            onComplete: () => {
+                document.body.classList.remove('kk-locked');
+            }
+        });
+        
+        tl.to('#kk-preloader .loader-donut', { rotation: 360, duration: 1.5, ease: "power2.inOut" }, 0);
+        tl.to(counter, { 
+            value: 100, duration: 1.5, ease: "power2.inOut",
+            onUpdate: () => { if (countEl) countEl.innerText = Math.round(counter.value) + "%" }
+        }, 0);
+        
+        tl.to('#kk-preloader', { yPercent: -100, duration: 0.8, ease: "power4.inOut" }, "+=0.2");
+        
+        tl.to(mainWrapper, { opacity: 1, duration: 0.1 }, "-=0.8");
+
+        tl.to('#kk-lp-wrapper .gsap-fade-up-hero', { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "back.out(1.2)" }, "-=0.6");
+        
+        gsap.to('#kk-lp-wrapper .rs-image-col', {
+            backgroundPosition: "50% 100%", ease: "none",
+            scrollTrigger: { trigger: '#kk-lp-wrapper .rich-soft-section', start: "top bottom", end: "bottom top", scrub: true }
+        });
+
+        gsap.to('#kk-lp-wrapper .gsap-floating', { y: -15, rotation: 1.5, duration: 2.5, ease: "sine.inOut", yoyo: true, repeat: -1 });
+
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+
+            gsap.utils.toArray('#kk-lp-wrapper .gsap-fade-up:not(.gsap-fade-up-hero)').forEach(elem => {
+                gsap.to(elem, { 
+                    y: 0, opacity: 1, duration: 0.8, ease: "back.out(1.2)",
+                    scrollTrigger: { trigger: elem, start: "top 85%" }
+                });
+            });
+
+            gsap.utils.toArray('#kk-lp-wrapper .gsap-fade-in').forEach(elem => {
+                gsap.to(elem, { 
+                    opacity: 1, duration: 1.2, ease: "power2.out",
+                    scrollTrigger: { trigger: elem, start: "top 80%" }
+                });
+            });
+
+            gsap.utils.toArray('#kk-lp-wrapper .gsap-text-reveal').forEach(text => {
+                gsap.to(text, { 
+                    y: 0, opacity: 1, duration: 1, ease: "back.out(1.5)", 
+                    scrollTrigger: { trigger: text, start: "top 85%" } 
+                });
+            });
+
+            gsap.utils.toArray('#kk-lp-wrapper .gsap-stagger').forEach(grid => {
+                gsap.to(grid.children, {
+                    y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: "back.out(1.5)",
+                    scrollTrigger: { trigger: grid, start: "top 85%" }
+                });
+            });
+            
+        }, 100);
+
+        // Scroll listener for Top Strip & Navbar
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            const strip = document.querySelector('.running-strip');
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (nav) {
+                if (scrollTop > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            }
+
+            if (scrollTop > lastScrollTop && scrollTop > 50) {
+                // Scrolling down
+                if(strip) strip.classList.add('hide');
+                if(nav) nav.classList.add('strip-hidden');
+            } else {
+                // Scrolling up
+                if(strip) strip.classList.remove('hide');
+                if(nav) nav.classList.remove('strip-hidden');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        const detailsElements = document.querySelectorAll('#kk-lp-wrapper details.faq-item');
+        detailsElements.forEach(targetDetail => {
+            targetDetail.addEventListener('click', () => {
+                detailsElements.forEach(detail => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+
+        // Swipe Functionality for Slider
+        const menuTrack = document.getElementById('menuTrack');
+        if(menuTrack) {
+            let startX = 0;
+            let endX = 0;
+            menuTrack.addEventListener('touchstart', e => {
+                startX = e.changedTouches[0].screenX;
+            }, {passive: true});
+
+            menuTrack.addEventListener('touchend', e => {
+                endX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, {passive: true});
+
+            function handleSwipe() {
+                if (startX - endX > 50) {
+                    moveMenuSlider('next');
+                }
+                if (endX - startX > 50) {
+                    moveMenuSlider('prev');
+                }
+            }
+        }
+    });
+
+    // --- INFINITE MENU SLIDER LOGIC ---
+    let isMenuAnimating = false;
+    function moveMenuSlider(direction) {
+        if (isMenuAnimating) return;
+        isMenuAnimating = true;
+        
+        const track = document.getElementById('menuTrack');
+        const cardWidth = track.children[0].offsetWidth;
+        const gap = 25; // Matching the CSS gap
+        const moveDistance = cardWidth + gap;
+
+        if (direction === 'next') {
+            track.style.transition = 'transform 0.4s ease';
+            track.style.transform = `translateX(-${moveDistance}px)`;
+            
+            setTimeout(() => {
+                track.style.transition = 'none';
+                track.appendChild(track.firstElementChild);
+                track.style.transform = 'translateX(0)';
+                isMenuAnimating = false;
+            }, 400);
+        } else {
+            track.style.transition = 'none';
+            track.prepend(track.lastElementChild);
+            track.style.transform = `translateX(-${moveDistance}px)`;
+            
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    track.style.transition = 'transform 0.4s ease';
+                    track.style.transform = 'translateX(0)';
+                    setTimeout(() => { isMenuAnimating = false; }, 400);
+                });
+            });
+        }
+    }
+</script><script type="text/javascript">jQuery(document).ready(function(e) {jQuery(document).ready(function($) {
+    
+    // 1. FAQ Accordion Toggle
+    $('.kk-faq-header').on('click', function() {
+        var $parent = $(this).parent('.kk-faq-item');
+        if ($parent.hasClass('active')) {
+            $parent.removeClass('active');
+        } else {
+            $('.kk-faq-item').removeClass('active');
+            $parent.addClass('active');
+        }
+    });
+
+    // 2. GSAP Scroll Reveals
+    if (typeof gsap !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.kk-reveal').forEach(function(elem) {
+            gsap.fromTo(elem, 
+                { y: 30, opacity: 0, autoAlpha: 0 }, 
+                {
+                    scrollTrigger: {
+                        trigger: elem,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    autoAlpha: 1,
+                    duration: 0.6,
+                    ease: "power2.out"
+                }
+            );
+        });
+    }
+
+    // 3. Corporate Form Submission via Fetch API (Background Submit)
+    var form = document.getElementById("corporateOrderForm");
+    var button = document.getElementById("corporateSubmitButton");
+    var message = document.getElementById("corporate-form-message");
+    var scriptURL = "https://script.google.com/macros/s/AKfycbySELngF16wpvGCsgUwKHlxbHIlGxusZOEla2wlYfrKrryX0L-Lje8MflgkzvHwpPGa/exec"; 
+
+    if (form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            // Update UI State
+            button.disabled = true;
+            button.innerHTML = "Submitting...";
+            message.style.display = "none";
+
+            var formData = new FormData(form);
+
+            // Fetch API submits silently without page reload
+            fetch(scriptURL, { method: "POST", body: formData, mode: "no-cors" })
+                .then(function() {
+                    message.style.display = "block";
+                    message.style.color = "#8bdc7b";
+                    message.innerHTML = "<strong>Thank you!</strong><br>Your corporate order request has been submitted successfully.";
+                    form.reset();
+                    button.disabled = false;
+                    button.innerHTML = "Submit Order Request  →";
+                })
+                .catch(function(error) {
+                    message.style.display = "block";
+                    message.style.color = "#ff7b7b";
+                    message.innerText = "Something went wrong. Please try again.";
+                    button.disabled = false;
+                    button.innerHTML = "Submit Order Request  →";
+                });
+        });
+    }
+
+});});jQuery(".lazy").show().lazyload();</script><!-- Page loaded in 0.14496994018555 milliseconds (21894) -->	</body>
+</html>

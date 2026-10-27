@@ -1,0 +1,57 @@
+html, body { padding: 0; margin: 0; font-size: 100%;}
+*,*:after,*:before {box-sizing: border-box;}
+a > img { border-width: 0 !important;}
+
+#header { position: fixed; top: 0; left: 0; width: 100%; z-index: 99}
+
+#header #main-nav .nav-list { list-style: none; margin: 0 auto; text-align: center; padding: 15px 0; max-width: 720px; position: relative;}
+#header #main-nav .nav-list .nav-list-item {display: inline-block; padding: 10px 0; margin: 0; font-family:'Lato'; font-size: 13px; }
+#header #main-nav .nav-list .nav-list-item a { text-transform: uppercase; text-decoration: none; padding: 0 10px; color: black; border-right: 1px solid}
+#header #main-nav .nav-list .nav-list-item:last-child > a { border-right: none;}
+
+#offer-box { margin: 30px auto; text-align: center; padding: 20px; max-width: 400px; z-index: 10;}
+#offer-box p { margin: 0;}
+
+/*Style 1 option to set the width to 720px*/
+#inner-wrapper #main-content{ margin: 2.5% auto; max-width: 720px; background-color: white; position: relative; z-index: 1}
+#inner-wrapper #main-content .main-content-overlay { position: absolute; top: 0; left: 0; width: 100%; bottom: 0; z-index: -1;}
+#inner-wrapper #main-content #main-content-wrapper { margin: 0 auto; width: 84%;}
+
+/*Style 2*/
+/*#inner-wrapper #main-content{ margin: 5.5% auto 0; max-width: 100%; background-color: white; position: relative;}*/
+/*#inner-wrapper #main-content #main-content-wrapper { margin: 0 auto; width: 100%;}*/
+/*Style 2* end*/
+
+/*#inner-wrapper #main-content #main-content-wrapper { margin: 0 auto; width: 84%;}*/
+
+#title-area { width: 100%; overflow: hidden; text-align: center;}
+#title-area .site-logo img{ max-width: 200px; max-height: 200px; margin:0 0 10px; z-index: 10;}
+#title-area h1 { font-family: 'Lato'; font-size: 72px; line-height: 1em; text-transform: none; text-decoration: none; letter-spacing: 0px; font-weight: 100; font-style: normal; color: #1a1a1a; margin:1% 0; text-align: center; display: inline-block; transition: all ease 0.5s;}
+#title-area h1 a, #title-area h1 a:visited { text-decoration: none; color: #1a1a1a; display: block; transition: all ease 0.5s;}
+#title-area p.site-tagline { font-family: "Lato"; font-size: 14px; line-height: 1.4em; text-transform: uppercase; text-decoration: none; letter-spacing: 3px; font-weight: 400; font-style: normal; color: rgba(28,28,28,0.9); text-align: center; margin: 0px; transition: all ease 0.5s;}
+
+#outer-wrapper #bg-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; bottom: 0; right: 0; z-index: -1;}
+/*#outer-wrapper::before { content: " "; top: 0; left: 0; position: fixed; width: 100%; min-width: 100%; height: 100%; z-index: -1; background-size: cover;}*/
+/*#outer-wrapper::before { background-image: linear-gradient(#C5E7F7, white);}*/
+body { position: absolute; min-width: 100%; min-height: 100%; width: 100%;padding-bottom: 100px; z-index: 1; background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;}
+/*#outer-wrapper { background: url("../3/-YrFoZDL9bCE/UhHZUYdEuII/AAAAAAAAAJI/P1jmOopoKbY/s1600/panier-mini-viennoiseries.png") no-repeat; background-size: 30%; background-position: center bottom; background-attachment: fixed;}*/
+#inner-wrapper { overflow: hidden; width: 100%; padding: 0 20px 100px; position: relative; top: 100px;}
+@media screen and (min-width: 641px){
+	#header #main-nav { padding: 0 20px;}
+	#header #main-nav .nav-list .nav-list-item.order-online { /*background-color: rgba(0,0,0,0.2);*/ border: 1px solid; /*border-radius: 10px;*/ position: absolute; right: 0; transition: all ease 0.5s;}
+	#header #main-nav .nav-list .nav-list-item.order-online a { border:none; padding: 10px; transition: all ease 0.5s;}
+	#header #main-nav .nav-list .nav-list-item:nth-last-child(2) a { border-right: none;}
+}
+@media screen and (max-width: 640px){
+	#header #main-nav .nav-list .nav-list-item { font-size: 12px;}	
+	#title-area p.site-tagline { font-size: 13px; padding-top: 15px;}	
+	#title-area h1 { font-size: 60px;}
+	#title-area .site-logo img, #title-area .site-logo a{ max-width: 100px; max-height: 100px; margin:0; border: none;}
+}
+
+/*#outer-wrapper {
+background-attachment: fixed !important;
+background-attachment: fixed;
+height: inherit; 
+background-size: cover;
+}*/

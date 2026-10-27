@@ -1,0 +1,16 @@
+*,*:after,*:before {box-sizing: border-box;}
+
+#title-area { width: 100%; overflow: hidden; text-align: center;}
+#title-area .site-logo img{ max-width: 200px; max-height: 200px; margin:0;}
+#title-area h1 { font-family: 'Lato'; font-size: 92px; line-height: 1em; text-transform: none; text-decoration: none; letter-spacing: 0px; font-weight: 100; font-style: normal; color: #1a1a1a; margin:4% 0 2%; text-align: center; display: inline-block; transition: all ease 0.5s}
+#title-area h1 a, #title-area h1 a:visited { text-decoration: none; color: #1a1a1a; display: block; transition: all ease 0.5s;}
+#title-area p.site-tagline { font-family: "Lato"; font-size: 20px; line-height: 1.4em; text-transform: uppercase; text-decoration: none; letter-spacing: 3px; font-weight: 400; font-style: normal; color: rgba(28,28,28,0.9); text-align: center; margin-bottom: 0px; transition: all ease 0.5s;}
+/*#footer { display: none;}*/
+/*#inner-wrapper #main-content { margin: 0; display: none;}*/
+
+@media screen and (max-width: 768px){
+	#title-area h1 { font-size: 60px;}
+	#title-area p.site-tagline { font-size: 16px;}
+	#title-area .site-logo img{ max-width: 150px; max-height: 150px;}
+}
+/*#outer-wrapper::before { background-image: linear-gradient(#C5E7F7, white);}*/

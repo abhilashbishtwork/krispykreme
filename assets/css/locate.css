@@ -1,0 +1,20 @@
+*,*:after,*:before {box-sizing: border-box;}
+
+#locate { width: 100%; margin: 0 auto; box-sizing: border-box;}
+#locate .hide { display: none !important;}
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+/*Style 1*/
+#locate .locate-wrapper.style1 .get-direction > p > a { font-size: 12px; text-transform: uppercase; font-weight: bold; padding: 10px; border: 1px solid;}
+#locate .locate-wrapper.style1 { width: 100%; padding: 8% 0; text-align: center; font-family: "Lato";}
+#locate .locate-wrapper.style1 hr { max-width: 300px}
+#locate .locate-wrapper.style1 .location-info-wrapper, 
+#locate .locate-wrapper.style1 .location-info-wrapper .location-detail-wrapper{ padding: 10px 0;}
+#locate .locate-wrapper.style1 .location-info-wrapper .location-detail-wrapper .open-time {padding-bottom: 10px}
+#locate .locate-wrapper.style1 .location-info-wrapper .location-detail-wrapper p { margin: 0}
+#locate .locate-wrapper.style1 .location-info-wrapper p > a { text-decoration: none; color: inherit;}
+
+/*#locate h1 { font-family: 'Lato'; font-size: 72px; line-height: 1em; text-transform: none; text-decoration: none; letter-spacing: 0px; font-weight: 100; font-style: normal; color: #1a1a1a; margin:1% 0; text-align: center; display: inline-block; transition: all ease 0.5s;}
+#locate h1 a, #title-area h1 a:visited { text-decoration: none; color: #1a1a1a; display: block; transition: all ease 0.5s;}*/
+#locate p.site-tagline { font-family: "Lato"; font-size: 14px; line-height: 1.4em; text-transform: uppercase; text-decoration: none; letter-spacing: 3px; font-weight: 400; font-style: normal; color: rgba(28,28,28,0.9); text-align: center; margin: 0px; transition: all ease 0.5s;}
